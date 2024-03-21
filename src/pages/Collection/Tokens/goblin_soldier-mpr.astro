@@ -1,0 +1,38 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Card from "../../../layouts/Card.astro";
+// import { Image } from 'astro:assets';
+---
+
+<Layout title="Goblin Soldier">
+	<Card
+		img="/images/scryfall/tokens/goblin-soldier-mpr.jpg"
+		enname="Goblin Soldier"
+		runame="Гоблин Солдат"
+		prints="Magic Player Rewards (2001)"
+		illustrated="Ron Spears"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CRon+Spears%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Они редко подвергают сомнению приказы. И, конечно, редко их понимают."
+		thanks=""
+		other="В 2001 году для продвижения игры в турнирах Wizards of the Coast была создана программа Magic Player Rewards, в рамках которой в качестве поощрения игрокам выдавались промо карты. Токены визуально имели уже много общего с обычными картами и содержали текст правил, тип и подтип существа, художественный текст, силу и выносливость, а также символ издания."
+	/>
+
+	<Scroll>
+		<Scrollcard
+		img="/images/scryfall/tokens/goblin-soldier-mpr.jpg"
+		link="/Collection/Tokens/goblin_soldier-mpr"
+		/>
+		<Scrollcard
+		img="/images/scryfall/tokens/goblin-soldier-teve.jpg"
+		link="/Collection/Tokens/goblin_soldier-teve"
+		/>
+		<Scrollcard
+		img="/images/scryfall/tokens/goblin-soldier-tema.jpg"
+		link="/Collection/Tokens/goblin_soldier-tema"
+		/>
+	</Scroll>
+
+</Layout>
+

@@ -1,0 +1,25 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Article from "../../layouts/Article.astro";
+import Pagetitle from "../../layouts/Pagetitle.astro";
+import Othertext from "../../layouts/Othertext.astro";
+---
+
+<Layout title="Articles">
+	<Pagetitle
+	pagetitle="Статьи"
+	/>
+	<Othertext
+	text="В данном разделе размещены сведения по вселенной Magic: the Gathering, связанные с  гоблинами, а также информация, которая выходит за пределы коллекции."
+	/>
+	<Article
+		name="Потерянные токены"
+		link="/Articles/Lost_tokens/"
+		img="/images/articles/Lost_tokens.jpg"
+	/>
+	<Article
+		name="День рождения 2023"
+		link="/Articles/DR2023/"
+		img="/images/articles/DR2023.jpg"
+	/>
+</Layout>

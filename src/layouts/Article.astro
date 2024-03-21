@@ -1,0 +1,74 @@
+---
+// import "../styles/global.css";
+
+interface Props {
+    name: string;
+    img: string;
+    link: string;
+}
+
+const { img, name, link } = Astro.props;
+---
+
+<div class="container">
+    <div class="image-article">
+        <a href={link} class="image-link">
+            <div class="image-overlay">
+                <p class="name">{name}</p>
+            </div>
+            <img src={img} alt={name} class="article-img"/>
+        </a>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .image-article {
+        position: relative;
+        width: 95%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .image-link {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-overlay {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        padding: 10px;
+        box-sizing: border-box;
+        color: white;
+        z-index: 1;
+    }
+
+
+    .name {
+        font-weight: bold;
+        margin: 0;
+        color: white;
+        font-size: 22px;
+    }
+
+    .article-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        filter: brightness(70%);
+    }
+</style>

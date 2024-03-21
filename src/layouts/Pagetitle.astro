@@ -1,0 +1,30 @@
+---
+// import "../styles/global.css";
+// import { Image } from 'astro:assets';
+
+
+interface Props {
+	pagetitle: string;
+}
+
+const { pagetitle } = Astro.props;
+---
+
+<div class="container">
+	<div class="pagetitle">
+		<h1>{pagetitle}</h1>
+	</div>
+</div>
+  
+<style>
+	.container {
+	  	width: 100%;
+	  	max-width: 800px;
+	  	margin: 0 auto; 
+	  	text-align: justify;
+	}
+
+	.pagetitle {
+        text-align: center;
+    }
+</style>

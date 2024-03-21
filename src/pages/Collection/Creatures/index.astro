@@ -1,0 +1,33 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+
+---
+
+<Layout title="Creatures">
+	<body>
+		<section class="image-gallery">
+			<div class="image-row">
+			   <div class="image-item">
+				<a href="/collection/creature"><p>Goblin Balloon Brigade</p></a>
+				<a href="/collection/creature"><Image src="/images/scryfall/creatures/goblin-balloon-brigade-lea.jpg" alt="Goblin Balloon Brigade" width="100" height="150"/></a>
+			  </div>
+			  <div class="image-item">
+				<p>Второй гоблин</p>
+				<a href="/collection/goblin_king_lea.html"><img src="https://cards.scryfall.io/large/front/5/9/59a207c7-0605-4c8d-a0fa-588bf8d8ada8.jpg?1702501605" alt=""></a>
+			  </div>
+			  <div class="image-item">
+				<p> Третий гоблин</p>
+				<a href="/collection/goblin_king_lea.html"><img src="https://cards.scryfall.io/normal/front/6/9/6964c3d5-4bb7-46b1-a057-878af73f2e5f.jpg?1562917032" alt=""></a>
+			  </div>
+			  <div class="image-item">
+				<p>Сюдя вставить локальные фото</p>
+				<a href="/collection/goblin_king_lea.html"><Image src="/images/scryfall/creatures/goblin-balloon-brigade-lea.jpg" alt="A bird." width="100" height="150"/></a>
+			  </div>
+			</div>
+		</section>
+	</body>
+
+
+</Layout>
+

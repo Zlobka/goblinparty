@@ -1,0 +1,32 @@
+---
+// import "../styles/global.css";
+// import { Image } from 'astro:assets';
+
+interface Props {
+	text: string;
+}
+
+const { text } = Astro.props;
+
+
+---
+
+<div class="container">
+	<div class="othertext">
+		<p>{text}</p>
+	</div>
+</div>
+  
+<style>
+	.container {
+	  	width: 100%;
+	  	max-width: 800px;
+	  	margin: 0 auto; 
+	  	text-indent: 2em;
+		text-align: justify;
+	}
+
+	.othertext {
+		margin: 0 1em;
+	}
+</style>

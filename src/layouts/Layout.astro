@@ -1,0 +1,274 @@
+---
+import "../styles/global.css";
+const pathSegments = new URL(Astro.request.url).pathname.split("/").filter(Boolean);
+const { title = "Коллекция гоблинов" } = Astro.props;
+
+---
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('mobile-menu');
+            const navMenu = document.querySelector('.nav');
+            
+            if (menuToggle !== null && navMenu !== null) {
+                menuToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('show');
+                    menuToggle.classList.toggle('close');
+                });
+            }
+    
+            const contactsLink = document.querySelector('a[href="#contacts"]');
+            if (contactsLink !== null) {
+                contactsLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const footer = document.getElementById('contacts');
+                    if (footer !== null) {
+                        footer.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/images/logo.png" alt="Лого" width="75" height="75" />
+            </a>
+        </div>
+        <nav>
+            <div class="header-title">Коллекция гоблинов</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="burger-icon"></span>
+                <span class="burger-icon"></span>
+                <span class="burger-icon"></span>
+            </div>
+            <div class="nav">
+                <a href="/" class:list={{ active: pathSegments.length === 0 }}>Главная</a>
+                <a href="/Collection/" class:list={{ active: pathSegments[0] === 'Collection' }}>Коллекция</a>
+                <a href="/Articles/" class:list={{ active: pathSegments[0] === 'Articles' }}>Статьи</a>
+                <a href="/Wishlist/" class:list={{ active: pathSegments[0] === 'Wishlist' }}>Wishlist</a>
+                <a href="#contacts" class:list={{ active: pathSegments[0] === 'Contacts' }}>Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <div class="breadcrumbs">
+        <span data-key="0">
+            <a href="/" class:list={{ active: pathSegments.length === 0 }}>Главная</a>
+            {pathSegments.map((segment, index, array) => (
+                <span>
+                    <span class="separator">/</span>
+                    <a
+                        href={`/${array.slice(0, index + 1).join("/")}`}
+                        class:list={{ active: index === pathSegments.length - 1 }}
+                    >
+                        {index === pathSegments.length - 1 ? Astro.props.title || segment : segment}
+                    </a>
+                </span>
+            ))}
+        </span>
+    </div>
+    <div class="spacer"></div>
+    <main>
+        <slot />
+    </main>
+    <footer id="contacts">
+        <p>
+            По любым вопросам, предложениям, пожеланиям, ошибкам, статьям и вишлисту можно написать в Telegram <a href="https://t.me/goblincollection" target="_blank">@goblincollection</a>.
+        </p>
+    </footer>
+</body>
+</html>
+
+<style>
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+    margin-top: 110px; /* Высота хедера */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: black;
+    max-width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* a {
+    font-weight: bold;
+    padding: 16px;
+    color: rgb(11, 13, 173);
+    text-decoration: none;
+} */
+
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/* a:hover, */
+a:focus {
+    color: rgb(196, 14, 44);
+}
+
+.active {
+    color: rgb(66, 31, 52);
+}
+
+footer {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    bottom: 0;
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.breadcrumbs {
+    position: fixed;
+    top: 100px;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-indent: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.breadcrumbs a {
+    color: #999;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: #555;
+}
+
+.breadcrumbs .current {
+    color: white;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    background-color: rgb(117, 112, 112);
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background-color: rgb(117, 112, 112);
+    z-index: 1;
+    border-bottom-left-radius: 20px; 
+}
+
+.nav.show {
+    display: flex;
+    top: 100%; 
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.burger-icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+}
+
+.close .burger-icon:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.close .burger-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.close .burger-icon:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.spacer {
+		height: 30px;
+}
+</style>

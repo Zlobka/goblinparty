@@ -1,0 +1,19 @@
+---
+// import "../styles/global.css";
+import { Image } from 'astro:assets';
+
+interface Props {
+	enname: string;
+	img: string;
+	link: string;
+}
+
+const { img, enname, link } = Astro.props;
+---
+
+<div class="image-item">
+	<a href={link}><p>{enname}</p></a>
+	<a href={link}><Image src={img} alt={enname} width="250" height="350"/></a>
+</div>
+
+

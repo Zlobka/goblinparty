@@ -1,0 +1,76 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Pagetitle from "../../layouts/Pagetitle.astro";
+import Othertext from "../../layouts/Othertext.astro";
+import Picture from "../../layouts/Picture.astro";
+---
+<Layout title="День рождения 2023">
+    <Pagetitle pagetitle="День рождения 2023"/>
+	<Othertext text="В 2023 году наше пауперное комьюнити сделало мне подарок на день рождения в виде собственноручно нарисованных токенов гоблинов. И несмотря на то, что они не являются официальной продукцией Wizards of the Coast, это самая главная часть в коллекции."/>
+    <div class="content-wrapper">
+        <div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Blinkov.jpg"/>
+            <Othertext text="Иван Блинков"/>
+        </div>
+        <div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Skripnik.jpg"/>
+            <Othertext text="Вячеслав Скрипник"/>
+        </div>
+        <div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Rusinovich.jpg"/>
+            <Othertext text="Андрей Русинович"/>
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Kharitonov.jpg"/>
+            <Othertext text="Алексей Харитонов"/>
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Levitina.jpg"/>
+            <Othertext text="Мария Левитина"/>
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Albov.jpg"/>
+            <Othertext text="Сергей Альбов"/>
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Bulanov.jpg" />
+            <Othertext text="Владимир Буланов" />
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Ilin.jpg"/>
+            <Othertext text="Антон Ильин"/>
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Karpachev.jpg"/>
+            <Othertext text="Денис Карпачев"/>
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Tvorun.jpg"/>
+            <Othertext text="Артем Творун"/>
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Volkov.jpg"/>
+            <Othertext text="Андрей Волков"/>
+        </div>
+		<div class="item-wrapper">
+            <Picture picture="/images/photos/tokens/DR2023/Nivnikov.jpg"/>
+            <Othertext text="Константин Нивников"/>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+	.item-wrapper {
+    	width: 250px;
+    	text-align: center;
+	}
+</style>
+
