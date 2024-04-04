@@ -64,7 +64,7 @@ const { title = "Коллекция гоблинов" } = Astro.props;
     </header>
     <div class="breadcrumbs">
         <span data-key="0">
-            <a href="/" class:list={{ active: pathSegments.length === 0 }}>Главная</a>
+            <a href="/" class:list={{ active: pathSegments.length === 0 }}>Home</a>
             {pathSegments.map((segment, index, array) => (
                 <span>
                     <span class="separator">/</span>

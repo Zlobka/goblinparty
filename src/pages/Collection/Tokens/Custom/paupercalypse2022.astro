@@ -1,0 +1,42 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import Card from "../../../../layouts/Card.astro";
+import Picture from "../../../../layouts/Picture.astro";
+---
+
+<Layout title="Paupercalypse 2022">
+	<Card
+		img="/images/photos/tokens/custom/Paupercalypse.jpg"
+		enname="Paupercalypse 2022"
+		runame=""
+		prints=""
+		illustrated="Dmitry Burmak"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDmitry+Burmak%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other="30 октября 2022 года состоялся последний из ежегодных турниров под брендом Paupercalypse, каждый из 116 участников которого получил памятный токен с иллюстрацией от Дмитрия Бурмака. \n В решающей игре финала Павел Цаплин (Combo Walls) получил геймлосс в практически выигранной партии за третье нарушение правил, и чемпионом стал Русинович Андрей (Mono White Heroic). \n Отдельно бы хотелось поздравить Андрея, потому что он был игроком нашей команды «Фойловое название», которая собралась на коленке за несколько дней до турнира вместе со мной и Алексеем Харитоновым. \n Я же с 11 очками (3-2-2) занял только 53 место (Dimir Terror), но зато токен был подписан у Дмитрия."
+	/>
+
+	<div class="content-wrapper">
+        <div class="item-wrapper">
+            <Picture picture="/images/scryfall/tokens/custom/Paupercalypse-sketch.jpg"/>
+        </div>
+        <div class="item-wrapper">
+            <Picture picture="/images/scryfall/tokens/custom/Paupercalypse-art.jpg"/>
+        </div>
+    </div>
+</Layout>
+<style>
+    .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+	.item-wrapper {
+    	width: 400px;
+    	text-align: center;
+	}
+</style>

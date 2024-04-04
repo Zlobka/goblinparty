@@ -1,7 +1,4 @@
 ---
-// import "../styles/global.css";
-// import { Image } from 'astro:assets';
-
 interface Props {
 	enname: string;
 	runame: string;
@@ -17,25 +14,27 @@ interface Props {
 const { img, enname, runame, prints, illustrated, flavor, thanks, link, other } = Astro.props;
 ---
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const image = document.querySelector('.image');
-        const expandedImage = document.getElementById('expanded-image');
-        const expandedImageSrc = document.getElementById('expanded-image-src');
-
-        if (image && expandedImage && expandedImageSrc) {
-            image.addEventListener('click', function () {
-                expandedImage.style.display = 'block';
-                const src = image.getAttribute('src');
-                if (src) {
-                    expandedImageSrc.setAttribute('src', src);
-                }
-            });
-
-            expandedImage.addEventListener('mousedown', function () {
-    			expandedImage.style.display = 'none';
+	document.addEventListener('DOMContentLoaded', function () {
+		const images = document.querySelectorAll('.image');
+		const expandedImage = document.getElementById('expanded-image');
+		const expandedImageSrc = document.getElementById('expanded-image-src');
+	
+		if (expandedImage && expandedImageSrc) {
+			images.forEach(image => {
+				image.addEventListener('click', function () {
+					expandedImage.style.display = 'block';
+					const src = image.getAttribute('src');
+					if (src) {
+						expandedImageSrc.setAttribute('src', src);
+					}
+				});
 			});
-        }
-    });
+	
+			expandedImage.addEventListener('mousedown', function () {
+				expandedImage.style.display = 'none';
+			});
+		}
+	});
 </script>
 
 <div class="container">
@@ -52,7 +51,12 @@ const { img, enname, runame, prints, illustrated, flavor, thanks, link, other } 
             <p><b>Иллюстратор:</b>&nbsp<a href={link} target="blank">{illustrated}</a></p>
         }
         {flavor &&
-            <p><b>Художественный текст:</b>&nbsp<i>{flavor}</i></p>
+            <div>
+                <b>Художественный текст:</b>&nbsp;
+                <i>{flavor.split('\n').map((paragraph, index) => (
+                    <p data-key={index}>{paragraph}</p>
+                ))}</i>
+            </div>
         }
         <p>{thanks}</p>
         {other.split('\n').map((paragraph, index) => (

@@ -1,0 +1,34 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import List from "../../../../layouts/List.astro";
+import Pagetitle from "../../../../layouts/Pagetitle.astro";
+import Othertext from "../../../../layouts/Othertext.astro";
+---
+
+<Layout title="Custom tokens">
+	<Pagetitle
+		pagetitle="Неофициальные токены"
+	/>
+	<Othertext
+		text="Здесь собраны токены гоблинов, которые выдавались участикам различных турниров, распространялись магазинами настольных игр, а также созданные художниками Wizards of the Coast в рамках своих кампаний."
+	/>
+	<section class="image-gallery">
+		<div class="image-row">
+			<List
+				enname="Pauper Winter Cup 2024"
+				link="/Collection/Tokens/Custom/Pauper-Winter-Cup-2024"
+				img="/images/photos/tokens/custom/Pauper-Winter-Cup-2024.jpg"
+			/>
+			<List
+				enname="Paupercalypse 2022"
+				link="/Collection/Tokens/Custom/paupercalypse2022"
+				img="/images/scryfall/tokens/custom/Paupercalypse.jpg"
+			/>
+			<List
+				enname="Tokens of Spirit"
+				link="/Collection/Tokens/Custom/nelson"
+				img="/images/scryfall/tokens/custom/nelson.jpg"
+			/>
+		</div>
+	</section>
+</Layout>
