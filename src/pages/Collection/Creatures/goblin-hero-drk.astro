@@ -1,0 +1,35 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Hero">
+	<Card
+		img="/images/scryfall/creatures/goblin-hero-drk.jpg"
+		enname="Goblin Hero"
+		runame="Гоблин-герой"
+		prints="The Dark (1994)"
+		illustrated="Mark Tedin"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CMark+Tedin%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Они атаковали в пылу ярости и безумия, но только один был так же сосредоточен на том, чтобы убить нас, как и на чистой радости битвы."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-hero-drk.jpg"
+			link="/Collection/Creatures/goblin-hero-drk"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-hero-5ed.jpg"
+			link="/Collection/Creatures/goblin-hero-5ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-hero-s99.jpg"
+			link="/Collection/Creatures/goblin-hero-s99"
+		/>
+	</Scroll>
+</Layout>
+

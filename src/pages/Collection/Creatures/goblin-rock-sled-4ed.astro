@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Rock Sled">
+	<Card
+		img="/images/photos/creatures/goblin-rock-sled-4ed.jpg"
+		enname="Goblin Rock Sled"
+		runame="Гоблинские каменные сани"
+		prints="Fourth Edition (1995)"
+		illustrated="Dennis Detwiller"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDennis+Detwiller%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other="При переиздании досадная ошибка с именем иллюстратора была устранена."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-rock-sled-drk.jpg"
+			link="/Collection/Creatures/goblin-rock-sled-drk"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-rock-sled-4ed.jpg"
+			link="/Collection/Creatures/goblin-rock-sled-4ed"
+		/>
+	</Scroll>
+</Layout>
+
