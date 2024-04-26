@@ -1,0 +1,40 @@
+---
+interface Props {
+	name: string;
+	link: string;
+	set: string;
+	number: string;
+	language: string;
+	other: string;
+}
+
+const { name, link,  set, number, language, other } = Astro.props;
+---
+
+<div class="container">
+    <table class="wishlistcard" style="width: 95%; border-bottom: 1px solid black; margin: 0 auto;">
+        <colgroup>
+            <col style="width: 35%;">
+            <col style="width: 5%;">
+            <col style="width: 5%;">
+            <col style="width: 5%;">
+            <col style="width: 45%;">
+        </colgroup>
+        <tr>
+            <td style="padding-left: 10px;"><a href={link} target="_blank">{name}</a></td>
+            <td style="text-align: center;">{set}</td>
+            <td style="text-align: center;">{number}</td>
+            <td style="text-align: center;">{language}</td>
+            <td style="padding-left: 10px;">{other}</td>
+        </tr>
+    </table>
+</div>
+
+<style>
+	.container {
+	  	width: 100%;
+	  	max-width: 800px;
+	  	margin: 0 auto; 
+	  	text-align: justify;
+	}
+</style>

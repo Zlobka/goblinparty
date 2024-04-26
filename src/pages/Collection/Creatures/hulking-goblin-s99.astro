@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Hulking Goblin">
+	<Card
+		img="/images/scryfall/creatures/hulking-goblin-s99.jpg"
+		enname="Hulking Goblin"
+		runame="Неуклюжий гоблин"
+		prints="Starter (1999)"
+		illustrated="Pete Venters"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CPete+Venters%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Чем они крупнее, тем усерднее избегают работы."
+		thanks=""
+		other="В переиздании для новичков карта получила подтип «Гоблин»"
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/hulking-goblin-por.jpg"
+			link="/Collection/Creatures/hulking-goblin-por"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/hulking-goblin-s99.jpg"
+			link="/Collection/Creatures/hulking-goblin-s99"
+		/>
+	</Scroll>
+</Layout>
+

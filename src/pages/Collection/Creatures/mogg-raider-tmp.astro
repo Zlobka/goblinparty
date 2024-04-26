@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Mogg Raider">
+	<Card
+		img="/images/scryfall/creatures/mogg-raider-tmp.jpg"
+		enname="Mogg Raider"
+		runame="Могг-Налетчик"
+		prints="Tempest (1997)"
+		illustrated="Brian Snõddy"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CBrian+Sn%C3%B5ddy%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Потрошение одного могга всегда поднимает настроение остальным."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/mogg-raider-tmp.jpg"
+			link="/Collection/Creatures/mogg-raider-tmp"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/mogg-raider-ath.jpg"
+			link="/Collection/Creatures/mogg-raider-ath"
+		/>
+	</Scroll>
+</Layout>
+

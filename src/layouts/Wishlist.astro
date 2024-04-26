@@ -1,0 +1,34 @@
+---
+
+---
+
+<div class="container">
+    <table class="wishlist" style="width: 95%; border-bottom: 2px solid black; margin: 0 auto;">
+        <colgroup>
+            <col style="width: 35%;">
+            <col style="width: 5%;">
+            <col style="width: 5%;">
+            <col style="width: 5%;">
+            <col style="width: 45%;">
+        </colgroup>
+        <tr>
+            <th style="text-align: center;">Название</th>
+            <th style="text-align: center;">Изд.</th>
+            <th style="text-align: center;">№</th>
+            <th style="text-align: center;">Яз.</th>
+            <th style="text-align: center;">Дополнительная информация</th>
+        </tr>
+        <tr>
+            <slot />
+        </tr>
+    </table>
+</div>
+
+<style>
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto; 
+        text-align: justify;
+    }
+</style>

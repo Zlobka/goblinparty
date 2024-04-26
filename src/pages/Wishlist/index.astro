@@ -2,6 +2,8 @@
 import Layout from "../../layouts/Layout.astro";
 import Othertext from "../../layouts/Othertext.astro";
 import Pagetitle from "../../layouts/Pagetitle.astro";
+// import Wishlist from "../../layouts/Wishlist.astro";
+// import Wishlistcard from "../../layouts/Wishlistcard.astro";
 ---
 
 <Layout title="Wishlist">
@@ -9,6 +11,67 @@ import Pagetitle from "../../layouts/Pagetitle.astro";
 		pagetitle="Wishlist"
 	/>
 	<Othertext
-		text="Список карт, которых не хватает в коллеции:"
+		text="Коллекцию можно расширять бесконечно (карты с изображениями гоблинов, наброски художников, иллюстрации к романам), поэтому если Вы хотите чем-то поделиться, то смело стучитесь в Телеграмм. Ниже приведены списки недостающих карт, чтобы изначально задуманная коллекция была полной."
 	/>
+
+	<p class="centered">Токены</p>
+	<!-- <Wishlist>
+		<Wishlistcard
+			name="Goblin Relic Token"
+			link="https://www.cardtrader.com/en/cards/goblin-relic-token-relic-tokens-eternal-collection"
+			set=""
+			number="123"
+			language="EN"
+			other="Бывает фоил?"
+		/>
+		<Wishlistcard
+			name=""
+			link=""
+			set=""
+			number=""
+			language=""
+			other=""
+		/>
+	</Wishlist> -->
+
+	<p class="centered">Гоблины</p>
+	<!-- <Wishlist>
+		<Wishlistcard
+			name="Goblin Relic Token"
+			link="https://www.cardtrader.com/en/cards/goblin-relic-token-relic-tokens-eternal-collection"
+			set=""
+			number="123"
+			language="EN"
+			other="Бывает фоил?"
+		/>
+		<Wishlistcard
+			name=""
+			link=""
+			set=""
+			number=""
+			language=""
+			other=""
+		/>
+	</Wishlist> -->
+
+	<p class="centered">Околокарточные хотелки</p>
+	<!-- <Wishlistcard
+		name="Goblin Relic Token"
+		link="https://www.cardtrader.com/en/cards/goblin-relic-token-relic-tokens-eternal-collection"
+		set=""
+		number=""
+		language=""
+		other="Обычный или фоил."
+	/> -->
 </Layout>
+
+<style>
+	.centered {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+</style>
