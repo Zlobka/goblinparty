@@ -1,0 +1,35 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Mogg Flunkies">
+	<Card
+		img="/images/scryfall/creatures/mogg-flunkies-pd2.jpg"
+		enname="Mogg Flunkies"
+		runame="Могги-Прислужники"
+		prints="Premium Deck Series: Fire and Lightning (2010), Modern Masters (2017), Masters 25 (2018)"
+		illustrated="Brom"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CBrom%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Они нападут на каждого, кто окажется перед ними, — если им покажут, в какой это стороне."
+		thanks=""
+		other="Подтип «Гоблины» изменен на единственное число."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/mogg-flunkies-sth.jpg"
+			link="/Collection/Creatures/mogg-flunkies-sth"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/mogg-flunkies-pd2.jpg"
+			link="/Collection/Creatures/mogg-flunkies-pd2"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/mogg-flunkies-m13.jpg"
+			link="/Collection/Creatures/mogg-flunkies-m13"
+		/>
+	</Scroll>
+</Layout>
+

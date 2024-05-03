@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Cavaliers">
+	<Card
+		img="/images/scryfall/creatures/goblin-cavaliers-s99.jpg"
+		enname="Goblin Cavaliers"
+		runame="Гоблины-всадники"
+		prints="Starter (1999)"
+		illustrated="DiTerlizzi"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDiTerlizzi%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Они так хорошо ладят со своими козами, потому что сами практически козлы."
+		thanks=""
+		other="Подтип «Гоблины» изменен на единственное число."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-cavaliers-p02.jpg"
+			link="/Collection/Creatures/goblin-cavaliers-p02"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-cavaliers-s99.jpg"
+			link="/Collection/Creatures/goblin-cavaliers-s99"
+		/>
+	</Scroll>
+</Layout>
+
