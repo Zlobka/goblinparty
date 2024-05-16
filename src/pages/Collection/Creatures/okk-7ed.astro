@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Okk">
+	<Card
+		img="/images/scryfall/creatures/okk-7ed.jpg"
+		enname="Okk"
+		runame="Окк"
+		prints="Seventh Edition (2001), Eighth Edition (2003)"
+		illustrated="Peter Bollinger"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CPeter+Bollinger%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/okk-usg.jpg"
+			link="/Collection/Creatures/okk-usg"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/okk-7ed.jpg"
+			link="/Collection/Creatures/okk-7ed"
+		/>
+	</Scroll>
+</Layout>
+

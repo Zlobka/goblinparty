@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Okk">
+	<Card
+		img="/images/scryfall/creatures/okk-usg.jpg"
+		enname="Okk"
+		runame="Окк"
+		prints="Urza's Saga (1998)"
+		illustrated="Mike Raabe"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CMike+Raabe%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other="Окки - шиванские гоблины, обладающие необычайно большими размерами и силой, но при этом типичным для гоблинов интеллектом и трусостью. Неизвестно, были ли окки отдельным видом гоблинов или просто мутантами."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/okk-usg.jpg"
+			link="/Collection/Creatures/okk-usg"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/okk-7ed.jpg"
+			link="/Collection/Creatures/okk-7ed"
+		/>
+	</Scroll>
+</Layout>
+

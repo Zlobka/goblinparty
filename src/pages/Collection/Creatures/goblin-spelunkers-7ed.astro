@@ -1,0 +1,35 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Spelunkers">
+	<Card
+		img="/images/scryfall/creatures/goblin-spelunkers-7ed.jpg"
+		enname="Goblin Spelunkers"
+		runame="Гоблин-скалолаз"
+		prints="Seventh Edition (2001)"
+		illustrated="Matt Cavotta"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CMatt+Cavotta%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Гоблины предпочитают пещеры практически всему остальному. Пещеры предпочитают гоблинам практически все остальное."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-spelunkers-usg.jpg"
+			link="/Collection/Creatures/goblin-spelunkers-usg"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-spelunkers-7ed.jpg"
+			link="/Collection/Creatures/goblin-spelunkers-7ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-spelunkers-rav.jpg"
+			link="/Collection/Creatures/goblin-spelunkers-rav"
+		/>
+	</Scroll>
+</Layout>
+

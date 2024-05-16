@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Medics">
+	<Card
+		img="/images/scryfall/creatures/goblin-medics-dmr.jpg"
+		enname="Goblin Medics"
+		runame="Гоблины-Медики"
+		prints="Dominaria Remastered (2023), March of the Machine Commander (2023)"
+		illustrated="Caio Monteiro"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CCaio+Monteiro%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Дорик был непоколебимо уверен в себе, изучив медицину в лучших мясных лавках Йотии."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-medics-ulg.jpg"
+			link="/Collection/Creatures/goblin-medics-ulg"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-medics-dmr.jpg"
+			link="/Collection/Creatures/goblin-medics-dmr"
+		/>
+	</Scroll>
+</Layout>
+

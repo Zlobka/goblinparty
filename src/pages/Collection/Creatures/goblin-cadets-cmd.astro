@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Cadets">
+	<Card
+		img="/images/scryfall/creatures/goblin-cadets-cmd.jpg"
+		enname="Goblin Cadets"
+		runame="Гоблины-Кадеты"
+		prints="Commander (2011)"
+		illustrated="Jerry Tiritilli"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CJerry+Tiritilli%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="«Если вы, ребята, не прекратите этот шум, я прямо сейчас сворачиваю эту экспедицию!»"
+		thanks=""
+		other="Подтип «Гоблины» стал в единственном числе."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-cadets-usg.jpg"
+			link="/Collection/Creatures/goblin-cadets-usg"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-cadets-cmd.jpg"
+			link="/Collection/Creatures/goblin-cadets-cmd"
+		/>
+	</Scroll>
+</Layout>
+

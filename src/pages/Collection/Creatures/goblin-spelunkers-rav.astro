@@ -1,0 +1,35 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Spelunkers">
+	<Card
+		img="/images/scryfall/creatures/goblin-spelunkers-rav.jpg"
+		enname="Goblin Spelunkers"
+		runame="Гоблин-скалолаз"
+		prints="Ravnica: City of Guilds (2005)"
+		illustrated="Glenn Fabry"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CGlenn+Fabry%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Трубочисты, исследователи брошенных зданий, верхолазы по шпилям… гоблины-скалолазы нашли себе множество применений в такой метрополии, как Равника."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-spelunkers-usg.jpg"
+			link="/Collection/Creatures/goblin-spelunkers-usg"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-spelunkers-7ed.jpg"
+			link="/Collection/Creatures/goblin-spelunkers-7ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-spelunkers-rav.jpg"
+			link="/Collection/Creatures/goblin-spelunkers-rav"
+		/>
+	</Scroll>
+</Layout>
+

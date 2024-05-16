@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Mountaineer">
+	<Card
+		img="/images/scryfall/creatures/goblin-mountaineer-ala.jpg"
+		enname="Goblin Mountaineer"
+		runame="Гоблин-Скалолаз"
+		prints="Shards of Alara (2008)"
+		illustrated="Michael Ryan"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CMichael+Ryan%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Гоблинские логова расположены высоко в горах Джанда. Это позволяет гоблинам легко добраться до жертвенных пиков над ними или как следует разогнаться, чтобы напасть на добычу внизу."
+		thanks=""
+		other="В названии карты слово «Скалолаз» написали с заглавной буквы."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-p02.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-p02"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-9ed.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-9ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-ala.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-ala"
+		/>
+	</Scroll>
+</Layout>

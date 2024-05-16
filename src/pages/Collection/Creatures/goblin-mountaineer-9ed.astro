@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Mountaineer">
+	<Card
+		img="/images/scryfall/creatures/goblin-mountaineer-9ed.jpg"
+		enname="Goblin Mountaineer"
+		runame="Гоблин-скалолаз"
+		prints="Ninth Edition (2005)"
+		illustrated="Pete Venters"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CPete+Venters%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Хуже гоблина может быть только гоблин, который знает, куда он идет."
+		thanks=""
+		other="Впервые переведен на русский язык и добавлен подтип «Разведчик»."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-p02.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-p02"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-9ed.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-9ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-ala.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-ala"
+		/>
+	</Scroll>
+</Layout>

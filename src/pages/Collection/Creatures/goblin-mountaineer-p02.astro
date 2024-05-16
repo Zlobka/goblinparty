@@ -1,0 +1,40 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Othertext from "../../../layouts/Othertext.astro";
+---
+
+<Layout title="Goblin Mountaineer">
+	<Card
+		img="/images/scryfall/creatures/goblin-mountaineer-p02.jpg"
+		enname="Goblin Mountaineer"
+		runame="Гоблин-скалолаз"
+		prints="Portal Second Age (1998), Starter (1999)"
+		illustrated="DiTerlizzi"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDiTerlizzi%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Гоблин-скалолаз, едва прокормивший свою семью."
+		thanks=""
+		other="Забавно, что в издании Ravnica: City of Guilds издан другой гоблин - Goblin Spelunkers, который на русский язык тоже переведен как Гоблин-скалолаз."
+	/>
+	<Othertext
+		text="Забавно, что в издании Ravnica: City of Guilds издан другой гоблин - Goblin Spelunkers, который на русский язык тоже переведен как Гоблин-скалолаз."
+	/>
+	<a href="https://www.mozilla.org/ru/">домашнюю страницу Mozilla</a>
+
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-p02.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-p02"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-9ed.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-9ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mountaineer-ala.jpg"
+			link="/Collection/Creatures/goblin-mountaineer-ala"
+		/>
+	</Scroll>
+</Layout>
