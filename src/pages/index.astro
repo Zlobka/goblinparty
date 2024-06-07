@@ -2,13 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import Pagetitle from "../layouts/Pagetitle.astro";
 import Othertext from "../layouts/Othertext.astro";
-import Picture from "../layouts/Picture.astro";
+// import Picture from "../layouts/Picture.astro";
 ---
 
 <Layout title="Home">
-	<Pagetitle
-		pagetitle="Welcome!"
-	/>
+	<Pagetitle pagetitle="Welcome!" />
 	<Othertext
 		text="На данном сайте размещена моя коллекция гоблинов карточной игры Magic: The Gathering (плейнсвокеры, токены и существа)."
 	/>
@@ -27,9 +25,7 @@ import Picture from "../layouts/Picture.astro";
 	<Othertext
 		text="- исправления ошибок на картах (фоил и русский язык, если это возможно);"
 	/>
-	<Othertext
-		text="- артистпруфы."
-	/>
+	<Othertext text="- артистпруфы." />
 	<Othertext
 		text="И, безусловно, хотелось бы в будущем подписать каждую карту у художников =) ."
 	/>
@@ -39,7 +35,7 @@ import Picture from "../layouts/Picture.astro";
 	<Othertext
 		text="Большое спасибо всем, кто помогал в пополнении коллекции! Если вы не увидели свое имя рядом с картой, которую мне передали, то свяжитесь со мной, пожалуйста. Я очень ценю ваше желание помочь и проблема только в моей невнимательности."
 	/>
-		<p class="centered">Отдельное спасибо:</p>
+	<p class="centered">Отдельное спасибо:</p>
 	<Othertext
 		text="Владимиру Коршунову за то, что учил, помогал, настраивал и терпел;"
 	/>

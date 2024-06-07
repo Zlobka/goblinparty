@@ -3,7 +3,6 @@ import Layout from "../../layouts/Layout.astro";
 import Othertext from "../../layouts/Othertext.astro";
 import Pagetitle from "../../layouts/Pagetitle.astro";
 import wishlist from "./wishlist.js";
-import wishlisttokens from "./wishlisttokens.js";
 ---
 
 <Layout title="Wishlist">
@@ -11,43 +10,27 @@ import wishlisttokens from "./wishlisttokens.js";
 	<Othertext
 		text="Коллекцию можно расширять бесконечно (карты с изображениями гоблинов, наброски художников, иллюстрации к романам), поэтому если Вы хотите чем-то поделиться, то смело стучитесь в Телеграмм. Ниже приведены списки недостающих карт, чтобы изначально задуманная коллекция была полной."
 	/>
-	<h3 class="centered">--- ГОБЛИНЫ ---</h3>
+	<p class="centered">Гоблины</p>
 	<div class="container">
 		{
 			wishlist.map((card) => (
-				<p>
-					<a href={card.href}>
-						<b>{card.name}</b>
-					</a>
-					({card.set_name}, №{card.number}) {card.lang} {card.foil}
-				</p>
+				<div>
+					<p>
+						<div class="card-name-container">
+							<a href={card.href}>
+								<b>{card.name}</b>
+							</a>
+						</div>
+						({card.set_name}, №{card.number}) {card.lang}{" "}
+						{card.foil}
+					</p>
+				</div>
 			))
 		}
 	</div>
-	<h3 class="centered">--- ТОКЕНЫ ---</h3>
-	<div class="container">
-		{
-			wishlisttokens.map((card) => (
-				<p>
-					<a href={card.href}>
-						<b>{card.name}</b>
-					</a>
-					({card.set_name}, №{card.number}) {card.lang} {card.foil}
-				</p>
-			))
-		}
-	</div>
-	<h3 class="centered">--- ДРУГИЕ ХОТЕЛКИ ---</h3>
-	<div class="container">
-		<p>
-			<a
-				href="https://www.cardtrader.com/en/cards/goblin-relic-token-relic-tokens-eternal-collection"
-			>
-				<b>Goblin Relic Token</b>
-			</a>
-			(Relic Tokens: Eternal Collection)
-		</p>
-	</div>
+
+	<p class="centered">Токены</p>
+	<p class="centered">Околокарточные хотелки</p>
 </Layout>
 
 <style>
