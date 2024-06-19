@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Arms Dealer">
+	<Card
+		img="/images/scryfall/creatures/arms-dealer-mmq.jpg"
+		enname="Arms Dealer"
+		runame="Торговец Оружием"
+		prints="Mercadian Masques (1999)"
+		illustrated="Luca Zontini"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CLuca+Zontini%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="У него есть оружие, у него есть связи, и он знает мрачную тайну ангара."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/arms-dealer-mmq.jpg"
+			link="/Collection/Creatures/arms-dealer-mmq"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/arms-dealer-m13.jpg"
+			link="/Collection/Creatures/arms-dealer-m13"
+		/>
+	</Scroll>
+</Layout>

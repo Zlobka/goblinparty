@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Chariot">
+	<Card
+		img="/images/scryfall/creatures/goblin-chariot-s99.jpg"
+		enname="Goblin Chariot"
+		runame="Колесница Гоблинов"
+		prints="Starter (1999)"
+		illustrated="Pete Venters"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CPete+Venters%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Они должны заменить колеса, они должны заменить кабана, а иногда им приходится заменять гоблина."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-chariot-s99.jpg"
+			link="/Collection/Creatures/goblin-chariot-s99"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-chariot-7ed.jpg"
+			link="/Collection/Creatures/goblin-chariot-7ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-chariot-9ed.jpg"
+			link="/Collection/Creatures/goblin-chariot-9ed"
+		/>
+	</Scroll>
+</Layout>

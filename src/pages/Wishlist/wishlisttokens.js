@@ -307,15 +307,6 @@ const wishlisttokens = [
     },
     {
         "name": "Goblin",
-        "set_name": "WOE Japanese Promo",
-        "set_code": "WWOE",
-        "number": 4,
-        "lang": "JA",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/c\/ccfc021b-6bcf-4c5e-a0ea-a5ce379fcbee.jpg?1693966931"
-    },
-    {
-        "name": "Goblin",
         "set_name": "Ravnica Remastered",
         "set_code": "TRVR",
         "number": 8,

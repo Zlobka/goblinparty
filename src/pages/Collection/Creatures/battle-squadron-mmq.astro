@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Battle Squadron">
+	<Card
+		img="/images/scryfall/creatures/battle-squadron-mmq.jpg"
+		enname="Battle Squadron"
+		runame="Боевая эскадрилья"
+		prints="Mercadian Masques (1999)"
+		illustrated="Mark Tedin"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CMark+Tedin%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Гоблины с военной точностью образовали беспорядочную кучу."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/battle-squadron-mmq.jpg"
+			link="/Collection/Creatures/battle-squadron-mmq"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/battle-squadron-ema.jpg"
+			link="/Collection/Creatures/battle-squadron-ema"
+		/>
+	</Scroll>
+</Layout>

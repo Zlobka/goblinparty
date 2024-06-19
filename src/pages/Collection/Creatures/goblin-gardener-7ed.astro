@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Gardener">
+	<Card
+		img="/images/scryfall/creatures/goblin-gardener-7ed.jpg"
+		enname="Goblin Gardener"
+		runame="Гоблин-Садовник"
+		prints="Seventh Edition (2001)"
+		illustrated="Jerry Tiritilli"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CJerry+Tiritilli%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Годы попыток не приблизили гоблинов к выращиванию колбасного дерева."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-gardener-uds.jpg"
+			link="/Collection/Creatures/goblin-gardener-uds"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-gardener-7ed.jpg"
+			link="/Collection/Creatures/goblin-gardener-7ed"
+		/>
+	</Scroll>
+</Layout>

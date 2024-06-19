@@ -1,5 +1,16 @@
 const wishlist = [
     {
+        "name": "Goblin Balloon Brigade",
+        "set_name": "Alpha",
+        "set_code": "LEA",
+        "year": "1993",
+        "number": 153,
+        "lang": "EN",
+        "foil": "Nonfoil",
+        "additionally": "Есть из Беты",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/1\/5129b422-7a35-4bc5-b14b-c814012a0d8f.jpg?1559591295"
+    },
+    {
         "name": "Goblin King",
         "set_name": "Alpha",
         "set_code": "LEA",
@@ -31,17 +42,6 @@ const wishlist = [
         "foil": "Nonfoil",
         "additionally": "плохой",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/d\/a\/da90043b-0e67-4a68-b6fb-0ca53ca7defc.jpg?1562875291"
-    },
-    {
-        "name": "Hulking Goblin",
-        "set_name": "Starter 1999",
-        "set_code": "S99",
-        "year": "1999",
-        "number": "107",
-        "lang": "EN",
-        "foil": "Nonfoil",
-        "additionally": "Подтип карты стал гоблин",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/b\/5\/b5e44bf3-8f0f-4e27-bed0-b9565dce2123.jpg?1562875051"
     },
     {
         "name": "Goblin King",
@@ -213,16 +213,6 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/8\/38134389-b471-4f58-a9ae-26bf9dc1557a.jpg?1562906791"
-    },
-    {
-        "name": "Mogg War Marshal",
-        "set_name": "Time Spiral",
-        "set_code": "TSP",
-        "year": "2006",
-        "number": 170,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/b\/8b9e0bdb-b615-447a-b80d-d7244c25c56e.jpg?1562924530"
     },
     {
         "name": "Thick-Skinned Goblin",
@@ -1113,6 +1103,16 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/9\/5973744a-72c3-48e6-b99a-8f6d634c06bb.jpg?1592764609"
     },
     {
+        "name": "Squee, Goblin Nabob",
+        "set_name": "Ultimate Masters",
+        "set_code": "UMA",
+        "year": "2018",
+        "number": "150",
+        "lang": "EN",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/7\/f7fa9fdb-1458-4e34-8d2a-dfc083a7a223.jpg?1559959239"
+    },
+    {
         "name": "Goblin Engineer",
         "set_name": "Modern Horizons",
         "set_code": "MH1",
@@ -1140,7 +1140,8 @@ const wishlist = [
         "number": "64",
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "Бывает с подписью художника?"
+        "additionally": "Бывает с подписью художника?",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/3\/83e6156b-c261-46d6-a038-24e11228b8b0.jpg?1678736413"
     },
     {
         "name": "Frogtosser Banneret",
@@ -1222,7 +1223,7 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/a\/ca624ce6-5b99-41af-8e26-b952f5a30916.jpg?1651655310"
     },
     {
-        "name": "Fable of the Mirror-Breaker \/\/ Reflection of Kiki-Jiki",
+        "name": "Fable of the Mirror-Breaker",
         "set_name": "Kamigawa: Neon Dynasty",
         "set_code": "NEO",
         "year": "2022",
@@ -1253,7 +1254,7 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/6\/862e9b05-209d-47d6-8692-ec0cb5f19e25.jpg?1654569301"
     },
     {
-        "name": "Fable of the Mirror-Breaker \/\/ Reflection of Kiki-Jiki",
+        "name": "Fable of the Mirror-Breaker",
         "set_name": "Kamigawa: Neon Dynasty",
         "set_code": "NEO",
         "year": "2022",
@@ -1325,16 +1326,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/6\/363339db-0caa-437c-98b0-ef6a7ed81e6e.jpg?1709324307"
     },
     {
-        "name": "Crime Novelist",
-        "set_name": "Murders at Karlov Manor",
-        "set_code": "MKM",
-        "year": "2024",
-        "number": "121",
-        "lang": "EN",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/1\/4\/14a5cd7c-b0b1-4ffa-a806-bb0e73baffad.jpg?1706241850"
-    },
-    {
         "name": "Grenzo, Havoc Raiser",
         "set_name": "Secret Lair Drop",
         "set_code": "SLD",
@@ -1353,6 +1344,16 @@ const wishlist = [
         "lang": "EN",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/a\/a\/aac38d90-1269-4884-a301-4664d69f1e8f.jpg?1715373965"
+    },
+    {
+        "name": "Warren Soultrader",
+        "set_name": "Modern Horizons 3",
+        "set_code": "MH3",
+        "year": "2024",
+        "number": "332",
+        "lang": "EN",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/c\/5c18591d-a8e2-49ea-b31e-7358e4143024.jpg?1717014152"
     }
 ];
 

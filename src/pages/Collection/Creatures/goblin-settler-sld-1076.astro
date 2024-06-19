@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Settler">
+	<Card
+		img="/images/scryfall/creatures/goblin-settler-sld-1076.jpg"
+		enname="Goblin Settler"
+		runame="Гоблин-Поселенец"
+		prints="Secret Lair Drop (2022)"
+		illustrated="Roman Klonek"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CRoman+Klonek%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="На более безопасные выходы уже претендовали сверхуспевающие гоблины."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-settler-s99.jpg"
+			link="/Collection/Creatures/goblin-settler-s99"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-settler-sld-1076.jpg"
+			link="/Collection/Creatures/goblin-settler-sld-1076"
+		/>
+	</Scroll>
+</Layout>
