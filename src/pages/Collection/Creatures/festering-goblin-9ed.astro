@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Festering Goblin">
+	<Card
+		img="/images/scryfall/creatures/festering-goblin-9ed.jpg"
+		enname="Festering Goblin"
+		runame="Разлагающийся гоблин"
+		prints="Ninth Edition (2005)"
+		illustrated="Thomas M. Baxa"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CThomas+M.+Baxa%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Он и при жизни распространял вокруг себя болезни и гнусный запах. После смерти мало что изменилось."
+		thanks=""
+		other="Впервые переведен на русский язык, но в переводе свойства карты была допущена ошибка."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/festering-goblin-ons.jpg"
+			link="/Collection/Creatures/festering-goblin-ons"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/festering-goblin-9ed.jpg"
+			link="/Collection/Creatures/festering-goblin-9ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/festering-goblin-10e.jpg"
+			link="/Collection/Creatures/festering-goblin-10e"
+		/>
+	</Scroll>
+</Layout>

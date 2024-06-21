@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Mogg Sentry">
+	<Card
+		img="/images/scryfall/creatures/mogg-sentry-9ed.jpg"
+		enname="Mogg Sentry"
+		runame="Могг-страж"
+		prints="Ninth Edition (2005)"
+		illustrated="Greg Staples"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CGreg+Staples%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Если вы разбудите могга, он впадет в бешенство."
+		thanks=""
+		other="В Девятом издании переведен на русский язык и добавлен подтип «Воин»."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/mogg-sentry-pls.jpg"
+			link="/Collection/Creatures/mogg-sentry-pls"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/mogg-sentry-8ed.jpg"
+			link="/Collection/Creatures/mogg-sentry-8ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/mogg-sentry-9ed.jpg"
+			link="/Collection/Creatures/mogg-sentry-9ed"
+		/>
+	</Scroll>
+</Layout>
