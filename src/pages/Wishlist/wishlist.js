@@ -7,7 +7,6 @@ const wishlist = [
         "number": 153,
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "Есть из Беты",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/1\/5129b422-7a35-4bc5-b14b-c814012a0d8f.jpg?1559591295"
     },
     {
@@ -18,19 +17,7 @@ const wishlist = [
         "number": 154,
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "или Beta \/ Unlimited",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/8\/5873672d-37ea-4c0f-97f3-12b74fde112d.jpg?1559591689"
-    },
-    {
-        "name": "Goblin Bully",
-        "set_name": "Portal",
-        "set_code": "POR",
-        "year": "1997",
-        "number": 131,
-        "lang": "EN",
-        "foil": "Nonfoil",
-        "additionally": "плохой",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/2\/0\/2094f2f6-8b38-47d6-973d-271986b5d982.jpg?1562445695"
     },
     {
         "name": "Goblin Commando",
@@ -40,7 +27,6 @@ const wishlist = [
         "number": 100,
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "плохой",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/d\/a\/da90043b-0e67-4a68-b6fb-0ca53ca7defc.jpg?1562875291"
     },
     {
@@ -134,16 +120,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/7\/8754592a-2f9b-477c-a049-d9a3eed271e5.jpg?1562738058"
     },
     {
-        "name": "Goblin Piker",
-        "set_name": "Ninth Edition",
-        "set_code": "9ED",
-        "year": "2005",
-        "number": 194,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/2\/32c86887-678a-4ba5-b0bb-243f4015ad80.jpg?1562733439"
-    },
-    {
         "name": "Mogg Sentry",
         "set_name": "Ninth Edition",
         "set_code": "9ED",
@@ -151,18 +127,7 @@ const wishlist = [
         "number": 204,
         "lang": "RU",
         "foil": "Foil",
-        "additionally": "Добавлен подтип Воин",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/6\/56100dd7-250d-4a3a-b719-b25fc73873dc.jpg?1562735465"
-    },
-    {
-        "name": "Raging Goblin",
-        "set_name": "Ninth Edition",
-        "set_code": "9ED",
-        "year": "2005",
-        "number": 209,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/b\/4\/b47a96df-dce7-495b-acc0-5551641f5a57.jpg?1562740503"
     },
     {
         "name": "Feral Animist",
@@ -445,16 +410,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/b\/c\/bc98177b-34a6-44e1-9abd-6fd8df09fc70.jpg?1562365551"
     },
     {
-        "name": "Adder-Staff Boggart",
-        "set_name": "Lorwyn",
-        "set_code": "LRW",
-        "year": "2007",
-        "number": 148,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/d\/1\/d116839f-6a3a-4a2e-a3ab-ea177c012746.jpg?1562369151"
-    },
-    {
         "name": "Boggart Sprite-Chaser",
         "set_name": "Lorwyn",
         "set_code": "LRW",
@@ -515,16 +470,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/f\/ffd2ec11-eb65-488d-a857-b5020113c429.jpg?1562376373"
     },
     {
-        "name": "Wort, Boggart Auntie",
-        "set_name": "Lorwyn",
-        "set_code": "LRW",
-        "year": "2007",
-        "number": 252,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/a\/0\/a08a1377-dede-47c8-8447-c9df125f3b14.jpg?1562360544"
-    },
-    {
         "name": "Goblin Matron",
         "set_name": "Duel Decks: Elves vs. Goblins",
         "set_code": "DD1",
@@ -532,7 +477,6 @@ const wishlist = [
         "number": "39",
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "Поискать у себя",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/2\/92254a56-9198-4ac8-8ea0-7bcca7de0e2a.jpg?1562925874"
     },
     {
@@ -543,7 +487,6 @@ const wishlist = [
         "number": "42",
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "Поискать у себя",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/4\/3\/43227330-f863-4bd9-81c8-12b0f8865ca3.jpg?1562908882"
     },
     {
@@ -554,7 +497,6 @@ const wishlist = [
         "number": "50",
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "Убрали подтип Лорд",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/b\/8\/b8297164-190a-4699-bcbd-3ee1d76f4036.jpg?1562933877"
     },
     {
@@ -576,16 +518,6 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/0\/1\/0116416b-ed95-4fa2-abc5-446de5c3106b.jpg?1562876483"
-    },
-    {
-        "name": "Frogtosser Banneret",
-        "set_name": "Morningtide",
-        "set_code": "MOR",
-        "year": "2008",
-        "number": 64,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/7\/8\/78543dac-7367-429f-88a5-83cb803193ef.jpg?1562879393"
     },
     {
         "name": "Squeaking Pie Grubfellows",
@@ -616,16 +548,6 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/e\/fe1d40cc-2871-4a33-bc58-5250fd3d4f0e.jpg?1562882673"
-    },
-    {
-        "name": "Fire Juggler",
-        "set_name": "Morningtide",
-        "set_code": "MOR",
-        "year": "2008",
-        "number": 90,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/0\/f04d5eef-da88-496b-a902-b87b0b386f96.jpg?1562882327"
     },
     {
         "name": "Lightning Crafter",
@@ -666,26 +588,6 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/d\/6\/d6a837b6-c8b0-4971-ae95-0b49d38bc830.jpg?1562836588"
-    },
-    {
-        "name": "Horde of Boggarts",
-        "set_name": "Shadowmoor",
-        "set_code": "SHM",
-        "year": "2008",
-        "number": 94,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/0\/2\/023562bf-da7d-486d-93fc-60353f55b8a7.jpg?1562826268"
-    },
-    {
-        "name": "Intimidator Initiate",
-        "set_name": "Shadowmoor",
-        "set_code": "SHM",
-        "year": "2008",
-        "number": 96,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/1\/c19dd557-dd49-450d-8446-71ce351d4f52.jpg?1562835543"
     },
     {
         "name": "Mudbrawler Cohort",
@@ -788,16 +690,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/0\/303d057c-c51c-46bb-b8fe-aabe7f3b07b6.jpg?1562905164"
     },
     {
-        "name": "Stream Hopper",
-        "set_name": "Eventide",
-        "set_code": "EVE",
-        "year": "2008",
-        "number": 113,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/5\/55371d0e-29da-4517-ab16-075782a1326f.jpg?1562912773"
-    },
-    {
         "name": "Hearthfire Hobgoblin",
         "set_name": "Eventide",
         "set_code": "EVE",
@@ -868,16 +760,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/2\/9235ef13-a363-4cab-b69d-39093a621a5c.jpg?1562291937"
     },
     {
-        "name": "Tuktuk Scrapper",
-        "set_name": "Worldwake",
-        "set_code": "WWK",
-        "year": "2010",
-        "number": 94,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/d\/3\/d3a84a2a-6384-497a-8ee2-de0fa74fcc80.jpg?1562296696"
-    },
-    {
         "name": "Goblin Arsonist",
         "set_name": "Rise of the Eldrazi",
         "set_code": "ROE",
@@ -898,26 +780,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/d\/cd23ab54-1eec-4bb4-81ce-b5cbe83fa940.jpg?1562708728"
     },
     {
-        "name": "Bloodcrazed Goblin",
-        "set_name": "Magic 2011",
-        "set_code": "M11",
-        "year": "2010",
-        "number": 125,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/4\/f4ec6fc4-efbf-4071-860e-ba244e27e2d3.jpg?1562481215"
-    },
-    {
-        "name": "Goblin Arsonist",
-        "set_name": "Magic 2012",
-        "set_code": "M12",
-        "year": "2011",
-        "number": 136,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/2\/c24751fd-5e9b-4d7d-83ba-e306b439bbe1.jpg?1562658589"
-    },
-    {
         "name": "Goblin Piker",
         "set_name": "Magic 2012",
         "set_code": "M12",
@@ -926,16 +788,6 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/0\/8\/083ec3e7-950c-4e9d-aba5-02ed13d723f0.jpg?1562631492"
-    },
-    {
-        "name": "Rummaging Goblin",
-        "set_name": "Magic 2013",
-        "set_code": "M13",
-        "year": "2012",
-        "number": 146,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/c\/cc5b622c-83a4-477e-a99c-2674e2bd6bb9.jpg?1562560131"
     },
     {
         "name": "Legion Loyalist",
@@ -965,7 +817,6 @@ const wishlist = [
         "number": 213,
         "lang": "EN",
         "foil": "Foil",
-        "additionally": "OVERSIZE",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/e\/5\/e5dde734-16ec-4f05-a659-7cc6efa9c8d2.jpg?1561813394"
     },
     {
@@ -985,7 +836,6 @@ const wishlist = [
         "number": 113,
         "lang": "?",
         "foil": "Nonfoil",
-        "additionally": "Издавалась на русском?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/1\/1\/1177d512-3e3b-4cea-a162-1fab169aefb8.jpg?1562633569"
     },
     {
@@ -996,7 +846,6 @@ const wishlist = [
         "number": 164,
         "lang": "?",
         "foil": "Foil",
-        "additionally": "Издавалась на русском?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/4\/7\/4705beb8-2c8b-4a15-aff1-580af3698fcf.jpg?1562701613"
     },
     {
@@ -1007,7 +856,6 @@ const wishlist = [
         "number": 33,
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "Поискать у себя",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/d\/cda40e31-ba99-4565-ad92-7c687ff44bd9.jpg?1561959212"
     },
     {
@@ -1018,7 +866,6 @@ const wishlist = [
         "number": "T",
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "Поискать у себя",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/4\/3\/43a3cfba-50f5-4d8c-96dd-3c4a70cb36ee.jpg?1562542375"
     },
     {
@@ -1029,7 +876,6 @@ const wishlist = [
         "number": 33,
         "lang": "EN",
         "foil": "Foil",
-        "additionally": "OVERSIZE. Поискать у себя.",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/8\/f895bd98-4db0-4acd-9ce5-90c78d799003.jpg?1561758451"
     },
     {
@@ -1040,18 +886,7 @@ const wishlist = [
         "number": 138,
         "lang": "RU",
         "foil": "?",
-        "additionally": "Бывает фоил?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/e\/ce134b85-2cbd-4dab-b233-040fd1f31765.jpg?1561758105"
-    },
-    {
-        "name": "Goblin Piledriver",
-        "set_name": "Magic Origins",
-        "set_code": "ORI",
-        "year": "2015",
-        "number": 151,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/4\/b\/4b332e3d-dcf4-4f62-8130-124ec5d23b90.jpg?1562018505"
     },
     {
         "name": "Mizzix of the Izmagnus",
@@ -1062,16 +897,6 @@ const wishlist = [
         "lang": "EN",
         "foil": "Nonfoil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/d\/0\/d0ea2c3a-c36d-44e8-bc46-5361f5f9d0e7.jpg?1562709949"
-    },
-    {
-        "name": "Reckless Bushwhacker",
-        "set_name": "Oath of the Gatewatch",
-        "set_code": "OGW",
-        "year": "2016",
-        "number": 116,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/0\/4\/0405b1b9-976a-4aaf-bec6-fa006decea74.jpg?1562895780"
     },
     {
         "name": "Gempalm Incinerator",
@@ -1094,6 +919,16 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/a\/0\/a0d4d9f3-e082-4e17-9056-346aa0d12b05.jpg?1592764811"
     },
     {
+        "name": "Goblin Ringleader",
+        "set_name": "Duel Decks: Merfolk vs. Goblins",
+        "set_code": "DDT",
+        "year": "2017",
+        "number": "48",
+        "lang": "EN",
+        "foil": "Nonfoil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/c\/3c90e9d7-6549-4291-a17a-4266c6d2e240.jpg?1592764836"
+    },
+    {
         "name": "Goblin Goliath",
         "set_name": "Game Night",
         "set_code": "GNT",
@@ -1101,16 +936,6 @@ const wishlist = [
         "number": 4,
         "lang": "EN",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/9\/5973744a-72c3-48e6-b99a-8f6d634c06bb.jpg?1592764609"
-    },
-    {
-        "name": "Squee, Goblin Nabob",
-        "set_name": "Ultimate Masters",
-        "set_code": "UMA",
-        "year": "2018",
-        "number": "150",
-        "lang": "EN",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/7\/f7fa9fdb-1458-4e34-8d2a-dfc083a7a223.jpg?1559959239"
     },
     {
         "name": "Goblin Engineer",
@@ -1123,16 +948,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/a\/5\/a55c4d47-5252-40af-961d-c08bc688028a.jpg?1562201855"
     },
     {
-        "name": "Pashalik Mons",
-        "set_name": "Modern Horizons",
-        "set_code": "MH1",
-        "year": "2019",
-        "number": 138,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/1\/1\/11616853-34b1-4bb1-9590-461e12970ec3.jpg?1562201917"
-    },
-    {
         "name": "Teeterpeak Ambusher",
         "set_name": "Zendikar Rising Art Series",
         "set_code": "AZNR",
@@ -1140,7 +955,6 @@ const wishlist = [
         "number": "64",
         "lang": "EN",
         "foil": "Nonfoil",
-        "additionally": "Бывает с подписью художника?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/3\/83e6156b-c261-46d6-a038-24e11228b8b0.jpg?1678736413"
     },
     {
@@ -1151,7 +965,6 @@ const wishlist = [
         "number": 43,
         "lang": "RU",
         "foil": "Nonfoil",
-        "additionally": "Поискать у себя",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/b\/e\/bec81e20-b644-421a-9c93-5a3dc52eb88b.jpg?1604193140"
     },
     {
@@ -1200,7 +1013,6 @@ const wishlist = [
         "set_code": "AAFR",
         "year": "2021",
         "number": "30",
-        "additionally": "Бывает подписанный? Бывает на русском языке?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/c\/9cbd966b-228d-4418-81f9-b377f7997627.jpg?1678924192"
     },
     {
@@ -1209,7 +1021,6 @@ const wishlist = [
         "set_code": "AAFR",
         "year": "2021",
         "number": "24",
-        "additionally": "Бывает подписанный? Бывает на русском языке?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/2\/f\/2f7f5455-6d35-4e65-93fd-489d878c74f4.jpg?1678924070"
     },
     {
@@ -1219,7 +1030,6 @@ const wishlist = [
         "year": "2022",
         "number": 18,
         "lang": "RU",
-        "additionally": "Бывает фоил? Бывает на русском?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/a\/ca624ce6-5b99-41af-8e26-b952f5a30916.jpg?1651655310"
     },
     {
@@ -1250,7 +1060,6 @@ const wishlist = [
         "number": 320,
         "lang": "RU",
         "foil": "Foil",
-        "additionally": "Бывает ру фоил?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/6\/862e9b05-209d-47d6-8692-ec0cb5f19e25.jpg?1654569301"
     },
     {
@@ -1261,7 +1070,6 @@ const wishlist = [
         "number": 357,
         "lang": "RU",
         "foil": "Foil",
-        "additionally": "Бывает ру фоил?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/0\/b\/0b696cd1-0d72-4df5-bacc-dc77e62f9a13.jpg?1656606776"
     },
     {
@@ -1272,7 +1080,6 @@ const wishlist = [
         "number": 388,
         "lang": "RU",
         "foil": "Foil",
-        "additionally": "Бывает ру фоил?",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/7\/9\/793c45e2-d0ce-4899-9f7f-5629bd6e01a1.jpg?1654570070"
     },
     {
@@ -1292,7 +1099,6 @@ const wishlist = [
         "year": "2022",
         "number": "38",
         "lang": "EN",
-        "additionally": "Signed",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/0\/50f9d227-1e81-46fa-93c1-c48e4864dbe5.jpg?1679962358"
     },
     {
@@ -1302,7 +1108,6 @@ const wishlist = [
         "year": "2023",
         "number": "40",
         "lang": "EN",
-        "additionally": "signet",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/e\/7\/e782cc9a-b917-40fc-bb6e-651b7f90b72d.jpg?1691058626"
     },
     {
@@ -1324,26 +1129,6 @@ const wishlist = [
         "lang": "EN",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/6\/363339db-0caa-437c-98b0-ef6a7ed81e6e.jpg?1709324307"
-    },
-    {
-        "name": "Grenzo, Havoc Raiser",
-        "set_name": "Secret Lair Drop",
-        "set_code": "SLD",
-        "year": "2024",
-        "number": "1621",
-        "lang": "EN",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/b\/9b6f7f0e-7a0a-42ae-8bc9-c20f62dd3264.jpg?1715374538"
-    },
-    {
-        "name": "Goblin King",
-        "set_name": "Secret Lair Drop",
-        "set_code": "SLD",
-        "year": "2024",
-        "number": "1705",
-        "lang": "EN",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/a\/a\/aac38d90-1269-4884-a301-4664d69f1e8f.jpg?1715373965"
     },
     {
         "name": "Warren Soultrader",
