@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Skirk Fire Marshal">
+	<Card
+		img="/images/scryfall/creatures/skirk-fire-marshal-dd1.jpg"
+		enname="Skirk Fire Marshal"
+		runame="Скиркский Огненный Маршал"
+		prints="Duel Decks: Elves vs. Goblins (2007), Duel Decks Anthology: Elves vs. Goblins (2014)"
+		illustrated="Greg & Tim Hildebrandt"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CGreg+Hildebrandt%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Он босс, потому что достаточно умен, чтобы убраться с дороги."
+		thanks=""
+		other="Убран подтип «Лорд»."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-fire-marshal-ons.jpg"
+			link="/Collection/Creatures/skirk-fire-marshal-ons"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-fire-marshal-dd1.jpg"
+			link="/Collection/Creatures/skirk-fire-marshal-dd1"
+		/>
+	</Scroll>
+</Layout>

@@ -1047,16 +1047,6 @@ const wishlist = [
         "set_name": "Kamigawa: Neon Dynasty",
         "set_code": "NEO",
         "year": "2022",
-        "number": 145,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/1\/c\/1ca736c7-35a9-48c7-b5a9-69b2a6e33ad0.jpg?1654567661"
-    },
-    {
-        "name": "Goro-Goro, Disciple of Ryusei",
-        "set_name": "Kamigawa: Neon Dynasty",
-        "set_code": "NEO",
-        "year": "2022",
         "number": 320,
         "lang": "RU",
         "foil": "Foil",
@@ -1129,16 +1119,6 @@ const wishlist = [
         "lang": "EN",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/6\/363339db-0caa-437c-98b0-ef6a7ed81e6e.jpg?1709324307"
-    },
-    {
-        "name": "Warren Soultrader",
-        "set_name": "Modern Horizons 3",
-        "set_code": "MH3",
-        "year": "2024",
-        "number": "332",
-        "lang": "EN",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/c\/5c18591d-a8e2-49ea-b31e-7358e4143024.jpg?1717014152"
     }
 ];
 

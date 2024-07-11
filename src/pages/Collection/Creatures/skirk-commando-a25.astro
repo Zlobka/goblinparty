@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Skirk Commando">
+	<Card
+		img="/images/scryfall/creatures/skirk-commando-a25.jpg"
+		enname="Skirk Commando"
+		runame="Скиркский Коммандос"
+		prints="Masters 25 (2018)"
+		illustrated="Slawomir Maniak"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CSlawomir+Maniak%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-commando-ons.jpg"
+			link="/Collection/Creatures/skirk-commando-ons"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-commando-a25.jpg"
+			link="/Collection/Creatures/skirk-commando-a25"
+		/>
+	</Scroll>
+</Layout>

@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Sky Raider">
+	<Card
+		img="/images/scryfall/creatures/goblin-sky-raider-9ed.jpg"
+		enname="Goblin Sky Raider"
+		runame="Гоблин-налетчик"
+		prints="Ninth Edition (2005)"
+		illustrated="Daren Bader"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDaren+Bader%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="«Летать» на языке гоблинов дословно означает «медленно падать»."
+		thanks=""
+		other="Впервые издан на русском языке и дополнительно получил подтип «Воин»."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-sky-raider-ons.jpg"
+			link="/Collection/Creatures/goblin-sky-raider-ons"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-sky-raider-9ed.jpg"
+			link="/Collection/Creatures/goblin-sky-raider-9ed"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-sky-raider-10e.jpg"
+			link="/Collection/Creatures/goblin-sky-raider-10e"
+		/>
+	</Scroll>
+</Layout>

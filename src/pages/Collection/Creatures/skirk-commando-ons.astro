@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Skirk Commando">
+	<Card
+		img="/images/scryfall/creatures/skirk-commando-ons.jpg"
+		enname="Skirk Commando"
+		runame="Скиркский Коммандос"
+		prints="Onslaught (2002), Archenemy (2010)"
+		illustrated="Dave Dorman"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDave+Dorman%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-commando-ons.jpg"
+			link="/Collection/Creatures/skirk-commando-ons"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-commando-a25.jpg"
+			link="/Collection/Creatures/skirk-commando-a25"
+		/>
+	</Scroll>
+</Layout>
