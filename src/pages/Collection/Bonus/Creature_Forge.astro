@@ -17,25 +17,29 @@ import Picture from "../../../layouts/Picture.astro";
 		other="Оживить существ на поле боя можно с помощью выпуска миниатюр от Wizkids - Magic: The Gathering Creature Forge: Overwhelming Swarm, выполненных в масштабе линейки D&D minis. \n В набор вошли 28 разных токенов, среди которых был и гоблин из Алары. Каждая фигурка стоит на подставке, соответствующей цвету существа карточной игры с указанием силы и выносливости. \n К сожалению, раскраска гоблина не соответствовала рекламной картинке, и большое спасибо Сергею Полканову за покрас, результаты которого превзошли все ожидания!"
 	/>
 	<div class="content-wrapper">
-        <div class="item-wrapper">
-            <Picture picture="/images/photos/bonus/Creature_Forge/original.jpg"/>
-        </div>
-        <div class="item-wrapper">
-            <Picture picture="/images/scryfall/bonus/Creature_Forge/Goblin.jpg"/>
-        </div>
-    </div>
+		<div class="item-wrapper">
+			<Picture
+				picture="/images/scryfall/bonus/Creature_Forge/Goblin.jpg"
+			/>
+		</div>
+		<div class="item-wrapper">
+			<Picture
+				picture="/images/photos/bonus/Creature_Forge/original.jpg"
+			/>
+		</div>
+	</div>
 </Layout>
 <style>
-    .content-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 800px;
-        margin: 0 auto;
-    }
+	.content-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
 
 	.item-wrapper {
-    	width: 400px;
-    	text-align: center;
+		width: 400px;
+		text-align: center;
 	}
 </style>

@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Zo-Zu the Punisher">
+	<Card
+		img="/images/scryfall/creatures/zo-zu-the-punisher-dds.jpg"
+		enname="Zo-Zu the Punisher"
+		runame="Зо-Зу Каратель"
+		prints="Duel Decks: Mind vs. Might (2017)"
+		illustrated="Wayne Reynolds"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CWayne+Reynolds%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Он не терпит незваных гостей."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/zo-zu-the-punisher-chk.jpg"
+			link="/Collection/Creatures/zo-zu-the-punisher-chk"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/zo-zu-the-punisher-dds.jpg"
+			link="/Collection/Creatures/zo-zu-the-punisher-dds"
+		/>
+	</Scroll>
+</Layout>

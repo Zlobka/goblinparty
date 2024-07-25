@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Mime">
+	<Card
+		img="/images/scryfall/creatures/goblin-mime-unh.jpg"
+		enname="Goblin Mime"
+		runame="Гоблин Мимик"
+		prints="Unhinged (2004)"
+		illustrated="Franz Vohwinkel"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CFranz+Vohwinkel%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Притвориться, что находишься внутри невидимой коробки, было достаточно легко для Бруга. А уже поиск невидимой двери вызвал у него проблемы."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mime-unh.jpg"
+			link="/Collection/Creatures/goblin-mime-unh"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mime-pal04.jpg"
+			link="/Collection/Creatures/goblin-mime-pal04"
+		/>
+	</Scroll>
+</Layout>

@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Brigand">
+	<Card
+		img="/images/scryfall/creatures/goblin-brigand-scg.jpg"
+		enname="Goblin Brigand"
+		runame="Гоблин-Грабитель"
+		prints="Scourge (2003)"
+		illustrated="Arnie Swekel"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CArnie+Swekel%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="После того, как Скиркский Ридж рухнул, гоблины соорудили систему канатов и блоков, чтобы удержать то, что осталось."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-brigand-scg.jpg"
+			link="/Collection/Creatures/goblin-brigand-scg"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-brigand-9ed.jpg"
+			link="/Collection/Creatures/goblin-brigand-9ed"
+		/>
+	</Scroll>
+</Layout>

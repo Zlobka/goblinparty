@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Psychopath">
+	<Card
+		img="/images/scryfall/creatures/goblin-psychopath-j22.jpg"
+		enname="Goblin Psychopath"
+		runame="Гоблин-Психопат"
+		prints="Scourge (2003)"
+		illustrated="Pete Venters"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CPete+Venters%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Он никогда не тратит энергию впустую, проводя различие между другом и врагом."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-psychopath-scg.jpg"
+			link="/Collection/Creatures/goblin-psychopath-scg"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-psychopath-j22.jpg"
+			link="/Collection/Creatures/goblin-psychopath-j22"
+		/>
+	</Scroll>
+</Layout>

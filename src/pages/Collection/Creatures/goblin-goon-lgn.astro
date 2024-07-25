@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Goon">
+	<Card
+		img="/images/photos/creatures/goblin-goon-lgn.jpg"
+		enname="Goblin Goon"
+		runame="Гоблин-Тупица"
+		prints="Legions (2003)"
+		illustrated="Greg Staples"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CGreg+Staples%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Гигантский размер тела. Гоблинский размер мозга."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-goon-lgn.jpg"
+			link="/Collection/Creatures/goblin-goon-lgn"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-goon-ddt.jpg"
+			link="/Collection/Creatures/goblin-goon-ddt"
+		/>
+	</Scroll>
+</Layout>

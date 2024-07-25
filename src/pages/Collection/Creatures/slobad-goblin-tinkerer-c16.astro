@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Slobad, Goblin Tinkerer">
+	<Card
+		img="/images/scryfall/creatures/slobad-goblin-tinkerer-c16.jpg"
+		enname="Slobad, Goblin Tinkerer"
+		runame="Слобад, Гоблинский Жестянщик"
+		prints="Commander (2016), The Brothers' War Commander (2022)"
+		illustrated="Kev Walker"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CKev+Walker%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="«Я часто шутил, что его сослали за то, что он был слишком умен. Теперь я знаю, почему он никогда не смеялся.» \n — Глисса Ищущая солнце"
+		thanks=""
+		other="При переиздании в Commander 2016 легендарность перенесли в тип карты, оставив в подтипе «Гоблин» и «Механик»."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/slobad-goblin-tinkerer-dst.jpg"
+			link="/Collection/Creatures/slobad-goblin-tinkerer-dst"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/slobad-goblin-tinkerer-c16.jpg"
+			link="/Collection/Creatures/slobad-goblin-tinkerer-c16"
+		/>
+	</Scroll>
+</Layout>

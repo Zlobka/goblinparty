@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Skirk Prospector">
+	<Card
+		img="/images/scryfall/creatures/skirk-prospector-ons.jpg"
+		enname="Skirk Prospector"
+		runame="Скиркский Старатель"
+		prints="Onslaught (2002), Duel Decks: Elves vs. Goblins (2007), Duel Decks: Knights vs. Dragons (2011), Duel Decks Anthology: Elves vs. Goblins (2014)"
+		illustrated="Doug Chaffee"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDoug+Chaffee%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="«Мне нравятся гоблины. Они издают забавные хлопающие звуки, когда умирают.» \n — Брейдс, призывательница слабоумия"
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-prospector-ons.jpg"
+			link="/Collection/Creatures/skirk-prospector-ons"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-prospector-dom.jpg"
+			link="/Collection/Creatures/skirk-prospector-dom"
+		/>
+	</Scroll>
+</Layout>

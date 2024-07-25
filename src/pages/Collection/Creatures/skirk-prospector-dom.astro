@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Skirk Prospector">
+	<Card
+		img="/images/scryfall/creatures/skirk-prospector-dom.jpg"
+		enname="Skirk Prospector"
+		runame="Скиркский Старатель"
+		prints="Dominaria (2018), Dominaria Remastered (2023)"
+		illustrated="Slawomir Maniak"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CSlawomir+Maniak%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Глубоко в недрах разоренного континента Отария остался рудник, где до сих пор трудятся так и не узнавшие о разрушениях наверху гоблины."
+		thanks=""
+		other="Переведен на русский язык с новыми иллюстрацией и художественным текстом."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-prospector-ons.jpg"
+			link="/Collection/Creatures/skirk-prospector-ons"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-prospector-dom.jpg"
+			link="/Collection/Creatures/skirk-prospector-dom"
+		/>
+	</Scroll>
+</Layout>

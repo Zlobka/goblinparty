@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Mime">
+	<Card
+		img="/images/scryfall/creatures/goblin-mime-pal04.jpg"
+		enname="Goblin Mime"
+		runame="Гоблин Мимик"
+		prints="Arena League (2004)"
+		illustrated="Dan Frazier"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDan+Frazier%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Мунг заметил, что на небе собирается несколько облаков. Возможно, сегодня он смог бы выполнить свою программу «хождение против ветра»."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mime-unh.jpg"
+			link="/Collection/Creatures/goblin-mime-unh"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-mime-pal04.jpg"
+			link="/Collection/Creatures/goblin-mime-pal04"
+		/>
+	</Scroll>
+</Layout>

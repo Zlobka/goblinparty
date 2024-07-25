@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Goblin Turncoat">
+	<Card
+		img="/images/scryfall/creatures/goblin-turncoat-dmr.jpg"
+		enname="Goblin Turncoat"
+		runame="Гоблин-Перебежчик"
+		prints="Dominaria Remastered (2023)"
+		illustrated="Borja Pindado"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CBorja+Pindado%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Модо отлично умел превращать друзей... в щиты."
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-turncoat-lgn.jpg"
+			link="/Collection/Creatures/goblin-turncoat-lgn"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/goblin-turncoat-dmr.jpg"
+			link="/Collection/Creatures/goblin-turncoat-dmr"
+		/>
+	</Scroll>
+</Layout>

@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Spikeshot Goblin">
+	<Card
+		img="/images/scryfall/creatures/spikeshot-goblin-a25.jpg"
+		enname="Spikeshot Goblin"
+		runame="Остроконечный Гоблин"
+		prints="Masters 25 (2018)"
+		illustrated="Jason Kang"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CJason+Kang%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="«Близость обескураживает. Не приближайся.» \n — Полевой гид по Вулшоку"
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/spikeshot-goblin-mrd.jpg"
+			link="/Collection/Creatures/spikeshot-goblin-mrd"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/spikeshot-goblin-a25.jpg"
+			link="/Collection/Creatures/spikeshot-goblin-a25"
+		/>
+	</Scroll>
+</Layout>
