@@ -1,0 +1,45 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Picture from "../../../layouts/Picture.astro";
+---
+
+<Layout title="Unpainted Magic Miniatures">
+	<Card
+		img="/images/scryfall/bonus/Unpainted_Magic_Miniatures/Goblin_Guide_Goblin_Bushwhacker3.jpg"
+		enname="Goblin Guide & Goblin Bushwhacker"
+		runame="Гоблин-Проводник & Гоблин-Партизан"
+		prints="Unpainted Magic Miniatures (2022)"
+		illustrated="WizKids"
+		link="https://wizkids.com/magic-the-gathering-creature-forge-overwhelming-swarm/"
+		flavor=""
+		thanks=""
+		other="Magic Unpainted Miniatures - это серия миниатюр, выпущенная компанией WizKids, которые предназначены для использования в книгах правил по Dungeons & Dragons / Magic: The Gathering. \n В наборах представлены нераскрашенные загрунтованные фигурки с высокой степенью детализации. На этих миниатюрах изображены известные персонажи из карт Magic: The Gathering, а для облегчения раскрашивания на них нанесены глубокие вырезы. Они поставляются в прозрачной упаковке и практически не требуют сборки."
+	/>
+	<div class="content-wrapper">
+		<div class="item-wrapper">
+			<Picture
+				picture="/images/scryfall/bonus/Unpainted_Magic_Miniatures/Goblin_Guide_Goblin_Bushwhacker2.jpg"
+			/>
+		</div>
+		<div class="item-wrapper">
+			<Picture
+				picture="/images/scryfall/bonus/Unpainted_Magic_Miniatures/Goblin_Guide_Goblin_Bushwhacker4.jpg"
+			/>
+		</div>
+	</div>
+</Layout>
+<style>
+	.content-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.item-wrapper {
+		width: 400px;
+		text-align: center;
+	}
+</style>

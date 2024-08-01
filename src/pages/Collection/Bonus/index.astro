@@ -6,19 +6,22 @@ import Othertext from "../../../layouts/Othertext.astro";
 ---
 
 <Layout title="Bonus">
-	<Pagetitle
-		pagetitle="Бонус"
-	/>
+	<Pagetitle pagetitle="Бонус" />
 	<Othertext
-	text="В данном разделе колекции находится разная продукция, которая не попала в другие категории."
-/>
-<section class="image-gallery">
-	<div class="image-row">
-		<List
-			enname="Creature Forge"
-			link="/Collection/Bonus/Creature_Forge"
-			img="/images/scryfall/bonus/Creature_Forge/Goblin.jpg"
-		/>
-	</div>
-</section>
+		text="В данном разделе колекции находится разная продукция, которая не попала в другие категории."
+	/>
+	<section class="image-gallery">
+		<div class="image-row">
+			<List
+				enname="Creature Forge"
+				link="/Collection/Bonus/Creature_Forge"
+				img="/images/scryfall/bonus/Creature_Forge/Goblin.jpg"
+			/>
+			<List
+				enname="Unpainted Magic Miniatures"
+				link="/Collection/Bonus/Unpainted_Magic_Miniatures"
+				img="/images/scryfall/bonus/Unpainted_Magic_Miniatures/Goblin_Guide_Goblin_Bushwhacker.jpg"
+			/>
+		</div>
+	</section>
 </Layout>

@@ -20,16 +20,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/8\/5873672d-37ea-4c0f-97f3-12b74fde112d.jpg?1559591689"
     },
     {
-        "name": "Goblin Commando",
-        "set_name": "Starter 1999",
-        "set_code": "S99",
-        "year": "1999",
-        "number": 100,
-        "lang": "EN",
-        "foil": "Nonfoil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/d\/a\/da90043b-0e67-4a68-b6fb-0ca53ca7defc.jpg?1562875291"
-    },
-    {
         "name": "Goblin King",
         "set_name": "Seventh Edition",
         "set_code": "7ED",
@@ -248,6 +238,16 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/4\/b\/4b266935-25ea-49c5-a1da-57c22a4362fd.jpg?1562547272"
+    },
+    {
+        "name": "Goblin Sky Raider",
+        "set_name": "Tenth Edition",
+        "set_code": "10E",
+        "year": "2007",
+        "number": 219,
+        "lang": "RU",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/e\/b\/ebbd596b-56c2-475c-93e4-c72f9f29281b.jpg?1562557243"
     },
     {
         "name": "Mogg Fanatic",
@@ -730,6 +730,16 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/6\/7\/674bd59d-9d6d-434d-974f-3aa1cbd770b5.jpg?1561982958"
     },
     {
+        "name": "Siege-Gang Commander",
+        "set_name": "Magic 2010",
+        "set_code": "M10",
+        "year": "2009",
+        "number": "157",
+        "lang": "RU",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/f\/9f5128dd-54dd-42a8-b126-f821f87ad069.jpg?1561990223"
+    },
+    {
         "name": "Goblin Guide",
         "set_name": "Zendikar",
         "set_code": "ZEN",
@@ -1101,6 +1111,16 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/e\/7\/e782cc9a-b917-40fc-bb6e-651b7f90b72d.jpg?1691058626"
     },
     {
+        "name": "Krenko, Mob Boss",
+        "set_name": "Ravnica Remastered",
+        "set_code": "RVR",
+        "year": "2024",
+        "number": "335z",
+        "lang": "EN",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/1\/0\/1044a41d-d3ea-4658-9840-20aabf29d063.jpg?1705528129"
+    },
+    {
         "name": "Goblin King",
         "set_name": "Wizards Play Network 2024",
         "set_code": "PW24",
@@ -1119,6 +1139,16 @@ const wishlist = [
         "lang": "EN",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/6\/363339db-0caa-437c-98b0-ef6a7ed81e6e.jpg?1709324307"
+    },
+    {
+        "name": "Kiki-Jiki, Mirror Breaker",
+        "set_name": "Secret Lair Drop",
+        "set_code": "SLD",
+        "year": "2024",
+        "number": "1659",
+        "lang": "EN",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/e\/8ec4694a-ac36-497c-a3f4-09d3f69939fe.jpg?1722024900"
     }
 ];
 
