@@ -300,6 +300,16 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/e\/8ea8d2b8-bcac-410d-aa5a-e4a74f7d5315.jpg?1562357880"
     },
     {
+        "name": "Boggart Loggers",
+        "set_name": "Lorwyn",
+        "set_code": "LRW",
+        "year": "2007",
+        "number": 103,
+        "lang": "RU",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/e\/9ed9a638-c3f9-48dd-9633-5c52146e0dcd.jpg?1562360464"
+    },
+    {
         "name": "Boggart Mob",
         "set_name": "Lorwyn",
         "set_code": "LRW",
@@ -1111,16 +1121,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/1\/0\/1044a41d-d3ea-4658-9840-20aabf29d063.jpg?1705528129"
     },
     {
-        "name": "Legion Warboss",
-        "set_name": "Ravnica Remastered",
-        "set_code": "RVR",
-        "year": "2024",
-        "number": "337z",
-        "lang": "EN",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/d\/fde7c88c-3bef-422a-8527-52c22928df05.jpg?1705528131"
-    },
-    {
         "name": "Goblin King",
         "set_name": "Wizards Play Network 2024",
         "set_code": "PW24",
@@ -1139,6 +1139,16 @@ const wishlist = [
         "lang": "EN",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/6\/363339db-0caa-437c-98b0-ef6a7ed81e6e.jpg?1709324307"
+    },
+    {
+        "name": "Kiki-Jiki, Mirror Breaker",
+        "set_name": "Secret Lair Drop",
+        "set_code": "SLD",
+        "year": "2024",
+        "number": "1659",
+        "lang": "EN",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/e\/8ec4694a-ac36-497c-a3f4-09d3f69939fe.jpg?1722024900"
     }
 ];
 

@@ -2,7 +2,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Duel Decks: Elves vs. Goblins",
-        "set_code": "TDD1",
+        "year": "TDD1",
         "number": "T3",
         "lang": "EN",
         "foil": "Nonfoil",
@@ -11,7 +11,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Magic 2010",
-        "set_code": "TM10",
+        "year": "TM10",
         "number": 4,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -20,7 +20,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Duel Decks: Knights vs. Dragons",
-        "set_code": "TDDG",
+        "year": "TDDG",
         "number": 1,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -29,7 +29,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "New Phyrexia",
-        "set_code": "TNPH",
+        "year": "TNPH",
         "number": 2,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -38,7 +38,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Modern Masters",
-        "set_code": "TMMA",
+        "year": "TMMA",
         "number": 10,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -47,7 +47,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Magic 2015",
-        "set_code": "TM15",
+        "year": "TM15",
         "number": 8,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -56,7 +56,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Commander 2014",
-        "set_code": "TC14",
+        "year": "TC14",
         "number": 17,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -65,7 +65,7 @@ const wishlisttokens = [
     {
         "name": "Tuktuk the Returned",
         "set_name": "Commander 2014",
-        "set_code": "TC14",
+        "year": "TC14",
         "number": 31,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -74,7 +74,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Duel Decks Anthology: Elves vs. Goblins",
-        "set_code": "TEVG",
+        "year": "TEVG",
         "number": 3,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -83,7 +83,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Magic Origins",
-        "set_code": "TORI",
+        "year": "TORI",
         "number": 6,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -92,7 +92,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Eternal Masters",
-        "set_code": "TEMA",
+        "year": "TEMA",
         "number": 10,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -101,7 +101,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Planechase Anthology",
-        "set_code": "TPCA",
+        "year": "TPCA",
         "number": 11,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -110,7 +110,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Modern Masters 2017",
-        "set_code": "TMM3",
+        "year": "TMM3",
         "number": 8,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -119,7 +119,7 @@ const wishlisttokens = [
     {
         "name": "Goblin Warrior",
         "set_name": "Modern Masters 2017",
-        "set_code": "TMM3",
+        "year": "TMM3",
         "number": 18,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -128,7 +128,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Duel Decks: Mind vs. Might",
-        "set_code": "TDDS",
+        "year": "TDDS",
         "number": 3,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -137,7 +137,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Duel Decks: Merfolk vs. Goblins",
-        "set_code": "TDDT",
+        "year": "TDDT",
         "number": 3,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -146,7 +146,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Masters 25",
-        "set_code": "TA25",
+        "year": "TA25",
         "number": 9,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -155,7 +155,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Commander Anthology Volume II",
-        "set_code": "TCM2",
+        "year": "TCM2",
         "number": 9,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -164,7 +164,7 @@ const wishlisttokens = [
     {
         "name": "Tuktuk the Returned",
         "set_name": "Commander Anthology Volume II",
-        "set_code": "TCM2",
+        "year": "TCM2",
         "number": 15,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -173,7 +173,7 @@ const wishlisttokens = [
     {
         "name": "Weird \/\/ Goblin",
         "set_name": "GRN Guild Kit",
-        "set_code": "TGK1",
+        "year": "TGK1",
         "number": 3,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -182,7 +182,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "RNA Guild Kit",
-        "set_code": "TGK2",
+        "year": "TGK2",
         "number": 6,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -191,7 +191,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Unsanctioned",
-        "set_code": "TUND",
+        "year": "TUND",
         "number": 2,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -200,16 +200,25 @@ const wishlisttokens = [
     {
         "name": "Goblin Wizard",
         "set_name": "Core Set 2021",
-        "set_code": "TM21",
+        "year": "TM21",
         "number": 8,
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/d\/fd7094d6-6e23-47f2-a9da-4dd680294ac8.jpg?1594733537"
     },
     {
+        "name": "Tuktuk the Returned",
+        "set_name": "Double Masters",
+        "year": "T2XM",
+        "number": 28,
+        "lang": "EN",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/7\/c7e7822b-f155-4f3f-b835-ec64f3a71307.jpg?1601138813"
+    },
+    {
         "name": "Goblin Construct",
         "set_name": "Zendikar Rising",
-        "set_code": "TZNR",
+        "year": "TZNR",
         "number": 11,
         "lang": "RU",
         "foil": "Foil",
@@ -218,7 +227,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Modern Horizons 2",
-        "set_code": "TMH2",
+        "year": "TMH2",
         "number": 8,
         "lang": "RU",
         "foil": "Foil",
@@ -227,7 +236,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Neon Dynasty Commander",
-        "set_code": "TNEC",
+        "year": "TNEC",
         "number": 5,
         "lang": "EN",
         "foil": "Foil",
@@ -236,7 +245,7 @@ const wishlisttokens = [
     {
         "name": "Goblin Shaman",
         "set_name": "Kamigawa: Neon Dynasty",
-        "set_code": "TNEO",
+        "year": "TNEO",
         "number": 8,
         "lang": "RU",
         "foil": "Foil",
@@ -245,7 +254,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Battle for Baldur's Gate",
-        "set_code": "TCLB",
+        "year": "TCLB",
         "number": 34,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -254,7 +263,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Dominaria Remastered",
-        "set_code": "TDMR",
+        "year": "TDMR",
         "number": 7,
         "lang": "EN",
         "foil": "Foil",
@@ -263,7 +272,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Phyrexia: All Will Be One Commander",
-        "set_code": "TONC",
+        "year": "TONC",
         "number": 11,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -272,7 +281,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "March of the Machine Commander",
-        "set_code": "TMOC",
+        "year": "TMOC",
         "number": 24,
         "lang": "EN",
         "foil": "Nonfoil",
@@ -281,7 +290,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Commander Masters",
-        "set_code": "TCMM",
+        "year": "TCMM",
         "number": 27,
         "lang": "EN",
         "foil": "Foil",
@@ -290,7 +299,7 @@ const wishlisttokens = [
     {
         "name": "Goblin",
         "set_name": "Ravnica Remastered",
-        "set_code": "TRVR",
+        "year": "TRVR",
         "number": 8,
         "lang": "EN",
         "foil": "Foil",
