@@ -1,0 +1,45 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Pagetitle from "../../../layouts/Pagetitle.astro";
+---
+
+<Layout title="Pins">
+	<Pagetitle pagetitle="Значки" />
+	<Card
+		img="/images/scryfall/bonus/Pins/mardu-scout.jpg"
+		enname="Mardu Scout"
+		runame="Разведчик Марду"
+		prints="Grand Prix: Miami 2015"
+		illustrated=""
+		link=""
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Card
+		img="/images/scryfall/bonus/Pins/mizzi-of-the-izmagnus.jpg"
+		enname="Mizzix of the Izmagnus"
+		runame="Mizzix of the Izmagnus"
+		prints="Grand Prix: Atlanta 2015"
+		illustrated=""
+		link=""
+		flavor=""
+		thanks=""
+		other=""
+	/>
+</Layout>
+<style>
+	.content-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.item-wrapper {
+		width: 400px;
+		text-align: center;
+	}
+</style>
