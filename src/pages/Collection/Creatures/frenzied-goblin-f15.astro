@@ -1,0 +1,38 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Frenzied Goblin">
+	<Card
+		img="/images/scryfall/creatures/frenzied-goblin-f15.jpg"
+		enname="Frenzied Goblin"
+		runame="Неистовый Гоблин"
+		prints="Friday Night Magic (2015)"
+		illustrated="Kev Walker"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CKev+Walker%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="Преимущество того, что вы не думаете о последствиях, заключается в том, что вы всегда будете удивлять тех, кто это делает."
+		thanks=""
+		other="Проверить худ текст"
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/frenzied-goblin-rav.jpg"
+			link="/Collection/Creatures/frenzied-goblin-rav"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/frenzied-goblin-m15.jpg"
+			link="/Collection/Creatures/frenzied-goblin-m15"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/frenzied-goblin-f15.jpg"
+			link="/Collection/Creatures/frenzied-goblin-f15"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/frenzied-goblin-a25.jpg"
+			link="/Collection/Creatures/frenzied-goblin-a25"
+		/>
+	</Scroll>
+</Layout>
