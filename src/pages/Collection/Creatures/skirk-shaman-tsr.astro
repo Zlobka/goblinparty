@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Skirk Shaman">
+	<Card
+		img="/images/scryfall/creatures/skirk-shaman-tsr.jpg"
+		enname="Skirk Shaman"
+		runame="Скирк Шаман"
+		prints="Time Spiral Remastered (2021)"
+		illustrated="Chippy"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CChippy%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="В измазанных сажей руках шамана смесь высушенных трав с холма Скирк может стать ликом паники."
+		thanks=""
+		other="В Ремастере изменено название карты на русском языке, а также доработан художественный текст."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-shaman-plc.jpg"
+			link="/Collection/Creatures/skirk-shaman-plc"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/skirk-shaman-tsr.jpg"
+			link="/Collection/Creatures/skirk-shaman-tsr"
+		/>
+	</Scroll>
+</Layout>

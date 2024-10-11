@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Bloodshot Trainee">
+	<Card
+		img="/images/scryfall/creatures/bloodshot-trainee-fut.jpg"
+		enname="Bloodshot Trainee"
+		runame="Надорвавшийся Ученик"
+		prints="Future Sight (2007)"
+		illustrated="Lucio Parrillo"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CLucio+Parrillo%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="«Гррр Когда-нибудь я сброшу этот … э-эх… скачу этот … гррр … скину этот валун вниз со скалы.»"
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/bloodshot-trainee-fut.jpg"
+			link="/Collection/Creatures/bloodshot-trainee-fut"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/bloodshot-trainee-som.jpg"
+			link="/Collection/Creatures/bloodshot-trainee-som"
+		/>
+	</Scroll>
+</Layout>

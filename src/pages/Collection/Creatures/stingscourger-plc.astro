@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Stingscourger">
+	<Card
+		img="/images/scryfall/creatures/stingscourger-plc.jpg"
+		enname="Stingscourger"
+		runame="Больнохлест"
+		prints="Planar Chaos (2007), Modern Masters (2013), Eternal Masters (2016)"
+		illustrated="Wayne Reynolds"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CWayne+Reynolds%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/stingscourger-plc.jpg"
+			link="/Collection/Creatures/stingscourger-plc"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/stingscourger-tsr.jpg"
+			link="/Collection/Creatures/stingscourger-tsr"
+		/>
+	</Scroll>
+</Layout>

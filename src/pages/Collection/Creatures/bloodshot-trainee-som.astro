@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Card from "../../../layouts/Card.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+---
+
+<Layout title="Bloodshot Trainee">
+	<Card
+		img="/images/scryfall/creatures/bloodshot-trainee-som.jpg"
+		enname="Bloodshot Trainee"
+		runame="Надорвавшийся Ученик"
+		prints="Scars of Mirrodin (2010), Modern Masters (2015), Jumpstart (2020), Double Masters (2020)"
+		illustrated="Matt Stewart"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CMatt+Stewart%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor="«Только подумать, какой я буду сильный, если руки не оторвутся!»"
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/creatures/bloodshot-trainee-fut.jpg"
+			link="/Collection/Creatures/bloodshot-trainee-fut"
+		/>
+		<Scrollcard
+			img="/images/scryfall/creatures/bloodshot-trainee-som.jpg"
+			link="/Collection/Creatures/bloodshot-trainee-som"
+		/>
+	</Scroll>
+</Layout>
