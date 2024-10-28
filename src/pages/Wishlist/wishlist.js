@@ -899,45 +899,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/d\/0\/d0ea2c3a-c36d-44e8-bc46-5361f5f9d0e7.jpg?1562709949"
     },
     {
-        "name": "Gempalm Incinerator",
-        "set_name": "Duel Decks: Merfolk vs. Goblins",
-        "set_code": "DDT",
-        "year": "2017",
-        "number": 39,
-        "lang": "EN",
-        "foil": "Nonfoil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/0\/909ac95c-ee41-482c-8b4d-196fe0d5b3c1.jpg?1592764780"
-    },
-    {
-        "name": "Goblin Goon",
-        "set_name": "Duel Decks: Merfolk vs. Goblins",
-        "set_code": "DDT",
-        "year": "2017",
-        "number": 44,
-        "lang": "EN",
-        "foil": "Nonfoil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/a\/0\/a0d4d9f3-e082-4e17-9056-346aa0d12b05.jpg?1592764811"
-    },
-    {
-        "name": "Goblin Ringleader",
-        "set_name": "Duel Decks: Merfolk vs. Goblins",
-        "set_code": "DDT",
-        "year": "2017",
-        "number": "48",
-        "lang": "EN",
-        "foil": "Nonfoil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/c\/3c90e9d7-6549-4291-a17a-4266c6d2e240.jpg?1592764836"
-    },
-    {
-        "name": "Goblin Goliath",
-        "set_name": "Game Night",
-        "set_code": "GNT",
-        "year": "2018",
-        "number": 4,
-        "lang": "EN",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/9\/5973744a-72c3-48e6-b99a-8f6d634c06bb.jpg?1592764609"
-    },
-    {
         "name": "Goblin Engineer",
         "set_name": "Modern Horizons",
         "set_code": "MH1",
@@ -1131,14 +1092,34 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/2\/6\/26f64c98-ca65-4425-b4ac-5ad8d902c0a4.jpg?1696292639"
     },
     {
-        "name": "Goblin Guide",
-        "set_name": "Secret Lair Showdown",
-        "set_code": "SLP",
+        "name": "Goblin Gang Leader",
+        "set_name": "Mystery Booster 2",
+        "set_code": "MB2",
         "year": "2024",
-        "number": "23",
+        "number": "144",
         "lang": "EN",
         "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/6\/363339db-0caa-437c-98b0-ef6a7ed81e6e.jpg?1709324307"
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/8\/98be3783-23e8-4143-8685-6d887f164294.jpg?1724765798"
+    },
+    {
+        "name": "Squee, Goblin Nabob",
+        "set_name": "Mystery Booster 2",
+        "set_code": "MB2",
+        "year": "2024",
+        "number": "247",
+        "lang": "EN",
+        "foil": "Foil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/6\/2\/620535aa-9daf-44d1-9e4a-dd922b2ce161.jpg?1723320111"
+    },
+    {
+        "name": "Boulder Jockey",
+        "set_name": "Mystery Booster 2",
+        "set_code": "MB2",
+        "year": "2024",
+        "number": "324",
+        "lang": "EN",
+        "foil": "Nonfoil",
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/f\/b\/fb089ab0-3d40-4d5c-beba-6251d1591ffe.jpg?1723702565"
     }
 ];
 
