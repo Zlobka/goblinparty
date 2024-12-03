@@ -2,89 +2,77 @@
 import Layout from "../../../layouts/Layout.astro";
 import List from "../../../layouts/List.astro";
 import Pagetitle from "../../../layouts/Pagetitle.astro";
+import { tokens } from "../../../data/tokens"; // Импортируем массив токенов
+
+// Инициализируем переменные для поиска
+let searchQuery = "";
+let filteredTokens = tokens;
 ---
 
 <Layout title="Токены">
-	<Pagetitle
-		pagetitle="Токены"
-	/>
-<section class="image-gallery">
-	<div class="image-row">
-		<List
-			enname="Неофициальные токены"
-			link="/Collection/Tokens/Custom"
-			img="/images/scryfall/tokens/goblin.jpg"
-		/>
-		<List
-			enname="Goblin"
-			link="/Collection/Tokens/goblin-tugl"
-			img="/images/scryfall/tokens/goblin-tugl.jpg"
-		/>
-		<List
-			enname="Goblin Soldier"
-			link="/Collection/Tokens/goblin_soldier-mpr"
-			img="/images/scryfall/tokens/goblin-soldier-mpr.jpg"
-		/>
-		<List
-			enname="Goblin"
-			link="/Collection/Tokens/goblin_1_1_P03"
-			img="/images/scryfall/tokens/goblin-p03.jpg"
-		/>
-		<List
-			enname="Goblin Rogue"
-			link="/Collection/Tokens/goblin_rogue-tlrw"
-			img="/images/scryfall/tokens/goblin-rogue-tlrw.jpg"
-		/>
-		<List
-			enname="Goblin Warrior"
-			link="/Collection/Tokens/goblin_warrior-tshm"
-			img="/images/scryfall/tokens/goblin-warrior-tshm.jpg"
-		/>
-		<List
-			enname="Tuktuk the Returned"
-			link="/Collection/Tokens/tuktuk_the_returned-troe"
-			img="/images/scryfall/tokens/tuktuk-the-returned-troe.jpg"
-		/>
-		<List
-			enname="Goblin"
-			link="/Collection/Tokens/goblin-tcn2"
-			img="/images/scryfall/tokens/goblin-tcn2.jpg"
-		/>
-		<List
-			enname="Goblin"
-			link="/Collection/Tokens/goblin-tc16"
-			img="/images/scryfall/tokens/goblin-tc16.jpg"
-		/>
-		<List
-			enname="Goblin"
-			link="/Collection/Tokens/goblin-tgk2"
-			img="/images/scryfall/tokens/goblin-tgk2.jpg"
-		/>
-		<List
-			enname="Goblin Wizard"
-			link="/Collection/Tokens/goblin_wizard-tm21"
-			img="/images/scryfall/tokens/goblin-wizard-tm21.jpg"
-		/>
-		<List
-			enname="Goblin Construct"
-			link="/Collection/Tokens/goblin_construct-tznr"
-			img="/images/scryfall/tokens/goblin-construct-tznr.jpg"
-		/>
-		<List
-			enname="Goblin Shaman"
-			link="/Collection/Tokens/goblin_shaman-tneo"
-			img="/images/scryfall/tokens/goblin-shaman-tneo.jpg"
-		/>
-		<List
-			enname="Phyrexian Goblin"
-			link="/Collection/Tokens/phyrexian_goblin-tone"
-			img="/images/scryfall/tokens/phyrexian-goblin-tone.jpg"
-		/>
-		<List
-			enname="Goblin"
-			link="/Collection/Tokens/goblin-trvr"
-			img="/images/scryfall/tokens/goblin-trvr.jpg"
-		/>
-	</div>
-</section>
+    <div class="search-container">
+        <div class="search-header">
+            <Pagetitle pagetitle="Токены" />
+            <input
+                id="searchInput"
+                type="text"
+                placeholder="Поиск по названию..."
+                value={searchQuery}
+                class="search-input"
+            />
+        </div>
+    </div>
+
+    <div class="image-gallery" data-tokens={JSON.stringify(tokens)}>
+        <div class="image-row">
+            {
+                filteredTokens.length > 0 ? (
+                    filteredTokens.map((token) => (
+                        <List
+                            enname={token.enname}
+                            link={token.link}
+                            img={token.img}
+                        />
+                    ))
+                ) : (
+                    <p>Токены не найдены.</p>
+                )
+            }
+        </div>
+    </div>
 </Layout>
+
+<!-- Добавляем скрипт для поиска -->
+<script type="module">
+    const searchInput = document.getElementById("searchInput");
+    const imageRow = document.querySelector(".image-row");
+
+    // Получаем токены из data-атрибута
+    const tokens = JSON.parse(
+        imageRow.closest(".image-gallery").getAttribute("data-tokens"),
+    );
+
+    searchInput.addEventListener("input", function () {
+        const query = searchInput.value.toLowerCase();
+        const filtered = tokens.filter((token) =>
+            token.enname.toLowerCase().includes(query),
+        );
+
+        // Очищаем текущие элементы и отображаем отфильтрованные
+        imageRow.innerHTML = "";
+
+        if (filtered.length > 0) {
+            filtered.forEach((token) => {
+                const tokenElement = document.createElement("div");
+                tokenElement.classList.add("image-item");
+                tokenElement.innerHTML = `
+            <a href="${token.link}"><p>${token.enname}</p></a>
+            <a href="${token.link}"><img src="${token.img}" alt="${token.enname}" width="250" height="350"></a>
+          `;
+                imageRow.appendChild(tokenElement);
+            });
+        } else {
+            imageRow.innerHTML = "<p>Токены не найдены.</p>";
+        }
+    });
+</script>

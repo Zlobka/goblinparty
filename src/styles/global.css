@@ -1,20 +1,20 @@
 .image-gallery {
-    width: 100%; 
-    max-width: 800px;  
-    margin: 0 auto; 
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
-  
+
 .image-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-  
+
 .image-item {
     margin: 5px;
     text-align: center;
 }
-  
+
 .image-item img {
     max-width: 250px;
     max-height: 350px;
@@ -25,10 +25,72 @@
     margin-bottom: 1px;
 }
 
-.image-item a { /* тут все про ссылки в List */
+.image-item a {
+    /* тут все про ссылки в List */
     text-decoration: none;
     color: #38128f;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
+/* Общий контейнер */
+.search-container {
+    width: 100%;
+    max-width: 800px;
+    /* Максимальная ширина контейнера */
+    margin: 0 auto;
+    /* Центрируем контейнер по горизонтали */
+}
+
+/* Контейнер для заголовка и поля поиска */
+.search-header {
+    display: flex;
+    align-items: center;
+    /* Выравнивание по вертикали */
+    justify-content: space-between;
+    /* Элементы по краям */
+    width: 100%;
+    /* Ширина контейнера на 100% */
+    margin-bottom: 20px;
+    /* Отступ снизу */
+}
+
+/* Стили для заголовка */
+.search-header Pagetitle {
+    margin-right: 20px;
+    /* Отступ справа от заголовка */
+}
+
+/* Стили для поля поиска */
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    /* Ширина поля поиска */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+    /* Отступ слева от поля */
+    margin-right: 10px;
+    /* Добавляем отступ справа */
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 600px) {
+    .search-header {
+        flex-direction: column;
+        /* На мобильных устройствах элементы располагаются вертикально */
+        align-items: flex-start;
+    }
+
+    .search-input {
+        width: 100%;
+        /* Поле поиска будет шириной 100% */
+        margin-left: 5;
+        /* Убираем отступ с левой стороны */
+        margin-top: 10px;
+        /* Отступ сверху на мобильных устройствах */
+        margin-right: 5;
+        /* Убираем отступ справа на мобильных устройствах */
+    }
+}
