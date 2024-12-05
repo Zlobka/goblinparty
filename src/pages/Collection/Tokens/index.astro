@@ -1,12 +1,11 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-import List from "../../../layouts/List.astro";
 import Pagetitle from "../../../layouts/Pagetitle.astro";
 import { tokens } from "../../../data/tokens"; // Импортируем массив токенов
 
-// Инициализируем переменные для поиска
-let searchQuery = "";
-let filteredTokens = tokens;
+// Параметры для пагинации
+const itemsPerPage = 30;
+const totalPages = Math.ceil(tokens.length / itemsPerPage);
 ---
 
 <Layout title="Токены">
@@ -17,62 +16,149 @@ let filteredTokens = tokens;
                 id="searchInput"
                 type="text"
                 placeholder="Поиск по названию..."
-                value={searchQuery}
                 class="search-input"
             />
         </div>
     </div>
 
-    <div class="image-gallery" data-tokens={JSON.stringify(tokens)}>
-        <div class="image-row">
-            {
-                filteredTokens.length > 0 ? (
-                    filteredTokens.map((token) => (
-                        <List
-                            enname={token.enname}
-                            link={token.link}
-                            img={token.img}
-                        />
-                    ))
-                ) : (
-                    <p>Токены не найдены.</p>
-                )
-            }
+    <div
+        class="image-gallery"
+        id="tokensGallery"
+        data-tokens={JSON.stringify(tokens)}
+        data-items-per-page={itemsPerPage}
+        data-total-pages={totalPages}
+    >
+        <div class="image-row" id="imageRow">
+            <!-- Элементы существ будут добавляться динамически -->
         </div>
+    </div>
+
+    <!-- Пагинация -->
+    <div class="pagination">
+        <button class="prev-page" id="prevPageButton" disabled="true">
+            Предыдущая
+        </button>
+        <span id="pageInfo">Страница 1 из {totalPages}</span>
+        <button class="next-page" id="nextPageButton" disabled="true">
+            Следующая
+        </button>
     </div>
 </Layout>
 
-<!-- Добавляем скрипт для поиска -->
 <script type="module">
-    const searchInput = document.getElementById("searchInput");
-    const imageRow = document.querySelector(".image-row");
+    document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.getElementById("searchInput");
+        const imageRow = document.getElementById("imageRow");
+        const prevPageButton = document.getElementById("prevPageButton");
+        const nextPageButton = document.getElementById("nextPageButton");
+        const pageInfo = document.getElementById("pageInfo");
 
-    // Получаем токены из data-атрибута
-    const tokens = JSON.parse(
-        imageRow.closest(".image-gallery").getAttribute("data-tokens"),
-    );
+        // Данные передаются через атрибут data-tokens
+        const tokens = JSON.parse(
+            document
+                .getElementById("tokensGallery")
+                .getAttribute("data-tokens"),
+        );
+        let filteredTokens = tokens;
+        let currentPage = 1;
 
-    searchInput.addEventListener("input", function () {
-        const query = searchInput.value.toLowerCase();
-        const filtered = tokens.filter((token) =>
-            token.enname.toLowerCase().includes(query),
+        const itemsPerPage = parseInt(
+            document
+                .getElementById("tokensGallery")
+                .getAttribute("data-items-per-page"),
+        );
+        const totalPages = parseInt(
+            document
+                .getElementById("tokensGallery")
+                .getAttribute("data-total-pages"),
         );
 
-        // Очищаем текущие элементы и отображаем отфильтрованные
-        imageRow.innerHTML = "";
+        // Функция для рендера токенов
+        function renderTokens() {
+            imageRow.innerHTML = ""; // Очищаем текущие элементы
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const tokensToDisplay = filteredTokens.slice(startIndex, endIndex);
 
-        if (filtered.length > 0) {
-            filtered.forEach((token) => {
-                const tokenElement = document.createElement("div");
-                tokenElement.classList.add("image-item");
-                tokenElement.innerHTML = `
-            <a href="${token.link}"><p>${token.enname}</p></a>
-            <a href="${token.link}"><img src="${token.img}" alt="${token.enname}" width="250" height="350"></a>
+            // Добавляем токены на страницу
+            if (tokensToDisplay.length > 0) {
+                tokensToDisplay.forEach((token) => {
+                    const tokenElement = document.createElement("div");
+                    tokenElement.classList.add("image-item");
+                    tokenElement.innerHTML = `
+            <a href="${token.link}">
+              <p>${token.enname}</p>
+            </a>
+            <a href="${token.link}">
+              <img src="${token.img}" alt="${token.enname}" width="250" height="350">
+            </a>
           `;
-                imageRow.appendChild(tokenElement);
-            });
-        } else {
-            imageRow.innerHTML = "<p>Токены не найдены.</p>";
+                    imageRow.appendChild(tokenElement);
+                });
+            } else {
+                imageRow.innerHTML = "<p>Токены не найдены.</p>";
+            }
+
+            // Обновляем информацию о пагинации
+            pageInfo.innerHTML = `Страница ${currentPage} из ${totalPages}`;
+            prevPageButton.disabled = currentPage === 1;
+            nextPageButton.disabled = currentPage === totalPages;
+
+            // Прокручиваем страницу наверх
+            window.scrollTo(0, 0);
         }
+
+        // Функция фильтрации
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.toLowerCase();
+            filteredTokens = tokens.filter((token) =>
+                token.enname.toLowerCase().includes(query),
+            );
+
+            // Обновляем текущую страницу после фильтрации
+            currentPage = 1;
+            renderTokens();
+        });
+
+        // Обработчики пагинации
+        prevPageButton.addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderTokens();
+            }
+        });
+
+        nextPageButton.addEventListener("click", () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderTokens();
+            }
+        });
+
+        // Инициализация отображения
+        renderTokens();
     });
 </script>
+
+<style>
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .pagination button {
+        padding: 10px 20px;
+        background-color: #ccc;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .pagination button:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+    }
+</style>

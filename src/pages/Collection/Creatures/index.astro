@@ -1,12 +1,13 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-import List from "../../../layouts/List.astro";
 import Pagetitle from "../../../layouts/Pagetitle.astro";
 import { creatures } from "../../../data/creatures"; // Импортируем массив существ
 
-// Инициализируем переменные для поиска
-let searchQuery = "";
-let filteredСreatures = creatures;
+// Параметры для пагинации
+const itemsPerPage = 30;
+const totalPages = Math.ceil(creatures.length / itemsPerPage);
+
+// Передаем данные существ и параметры пагинации как пропсы в клиентский скрипт
 ---
 
 <Layout title="Существа">
@@ -17,68 +18,152 @@ let filteredСreatures = creatures;
 				id="searchInput"
 				type="text"
 				placeholder="Поиск по названию..."
-				value={searchQuery}
 				class="search-input"
 			/>
 		</div>
 	</div>
 
-	<div class="image-gallery" data-creatures={JSON.stringify(creatures)}>
-		<div class="image-row">
-			{
-				filteredСreatures.length > 0 ? (
-					filteredСreatures.map((creature) => (
-						<List
-							enname={creature.enname}
-							link={creature.link}
-							img={creature.img}
-						/>
-					))
-				) : (
-					<p>Существа не найдены.</p>
-				)
-			}
+	<div
+		class="image-gallery"
+		id="creaturesGallery"
+		data-creatures={JSON.stringify(creatures)}
+		data-items-per-page={itemsPerPage}
+		data-total-pages={totalPages}
+	>
+		<div class="image-row" id="imageRow">
+			<!-- Элементы существ будут добавляться динамически -->
 		</div>
+	</div>
+
+	<!-- Пагинация -->
+	<div class="pagination">
+		<button class="prev-page" id="prevPageButton" disabled="true">
+			Предыдущая
+		</button>
+		<span id="pageInfo">Страница 1 из {totalPages}</span>
+		<button class="next-page" id="nextPageButton" disabled="true">
+			Следующая
+		</button>
 	</div>
 </Layout>
 
 <script type="module">
-	const searchInput = document.getElementById("searchInput");
-	const imageRow = document.querySelector(".image-row");
+	document.addEventListener("DOMContentLoaded", () => {
+		const searchInput = document.getElementById("searchInput");
+		const imageRow = document.getElementById("imageRow");
+		const prevPageButton = document.getElementById("prevPageButton");
+		const nextPageButton = document.getElementById("nextPageButton");
+		const pageInfo = document.getElementById("pageInfo");
 
-	// Получаем данные существ из data-атрибута
-	const creatures = JSON.parse(
-		imageRow.closest(".image-gallery").getAttribute("data-creatures"),
-	);
+		// Данные передаются через атрибут data-creatures
+		const creatures = JSON.parse(
+			document
+				.getElementById("creaturesGallery")
+				.getAttribute("data-creatures"),
+		);
+		let filteredCreatures = creatures;
+		let currentPage = 1;
 
-	// Фильтруем существа по запросу
-	searchInput.addEventListener("input", function () {
-		const query = searchInput.value.toLowerCase();
-		const filtered = creatures.filter((creature) =>
-			creature.enname.toLowerCase().includes(query),
+		const itemsPerPage = parseInt(
+			document
+				.getElementById("creaturesGallery")
+				.getAttribute("data-items-per-page"),
+		);
+		const totalPages = parseInt(
+			document
+				.getElementById("creaturesGallery")
+				.getAttribute("data-total-pages"),
 		);
 
-		// Очищаем текущие элементы и отображаем отфильтрованные
-		imageRow.innerHTML = "";
+		// Функция для рендера существ
+		function renderCreatures() {
+			imageRow.innerHTML = ""; // Очищаем текущие элементы
+			const startIndex = (currentPage - 1) * itemsPerPage;
+			const endIndex = startIndex + itemsPerPage;
+			const creaturesToDisplay = filteredCreatures.slice(
+				startIndex,
+				endIndex,
+			);
 
-		if (filtered.length > 0) {
-			// Добавляем отфильтрованные существа
-			filtered.forEach((creature) => {
-				const creatureElement = document.createElement("div");
-				creatureElement.classList.add("image-item");
-				creatureElement.innerHTML = `
-					<a href="${creature.link}">
-						<p>${creature.enname}</p>
-					</a>
-					<a href="${creature.link}">
-						<img src="${creature.img}" alt="${creature.enname}" width="250" height="350">
-					</a>
-				`;
-				imageRow.appendChild(creatureElement);
-			});
-		} else {
-			// Если существа не найдены
-			imageRow.innerHTML = "<p>Существа не найдены.</p>";
+			// Добавляем существа на страницу
+			if (creaturesToDisplay.length > 0) {
+				creaturesToDisplay.forEach((creature) => {
+					const creatureElement = document.createElement("div");
+					creatureElement.classList.add("image-item");
+					creatureElement.innerHTML = `
+            <a href="${creature.link}">
+              <p>${creature.enname}</p>
+            </a>
+            <a href="${creature.link}">
+              <img src="${creature.img}" alt="${creature.enname}" width="250" height="350">
+            </a>
+          `;
+					imageRow.appendChild(creatureElement);
+				});
+			} else {
+				imageRow.innerHTML = "<p>Существа не найдены.</p>";
+			}
+
+			// Обновляем информацию о пагинации
+			pageInfo.innerHTML = `Страница ${currentPage} из ${totalPages}`;
+			prevPageButton.disabled = currentPage === 1;
+			nextPageButton.disabled = currentPage === totalPages;
+
+			// Прокручиваем страницу наверх
+			window.scrollTo(0, 0);
 		}
+
+		// Функция фильтрации
+		searchInput.addEventListener("input", function () {
+			const query = searchInput.value.toLowerCase();
+			filteredCreatures = creatures.filter((creature) =>
+				creature.enname.toLowerCase().includes(query),
+			);
+
+			// Обновляем текущую страницу после фильтрации
+			currentPage = 1;
+			renderCreatures();
+		});
+
+		// Обработчики пагинации
+		prevPageButton.addEventListener("click", () => {
+			if (currentPage > 1) {
+				currentPage--;
+				renderCreatures();
+			}
+		});
+
+		nextPageButton.addEventListener("click", () => {
+			if (currentPage < totalPages) {
+				currentPage++;
+				renderCreatures();
+			}
+		});
+
+		// Инициализация отображения
+		renderCreatures();
 	});
 </script>
+
+<style>
+	.pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		margin-top: 20px;
+	}
+
+	.pagination button {
+		padding: 10px 20px;
+		background-color: #ccc;
+		border: none;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	.pagination button:disabled {
+		background-color: #ddd;
+		cursor: not-allowed;
+	}
+</style>

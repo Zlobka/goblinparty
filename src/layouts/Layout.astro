@@ -40,18 +40,38 @@ const { title = "Коллекция гоблинов" } = Astro.props;
                     });
                 }
             });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const scrollToTopButton =
+                    document.getElementById("scrollToTop");
+
+                if (!scrollToTopButton) {
+                    console.error("Кнопка scrollToTop не найдена!");
+                    return;
+                }
+
+                window.addEventListener("scroll", function () {
+                    if (window.scrollY > 200) {
+                        scrollToTopButton.style.display = "flex";
+                    } else {
+                        scrollToTopButton.style.display = "none";
+                    }
+                });
+
+                scrollToTopButton.addEventListener("click", function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    });
+                });
+            });
         </script>
     </head>
     <body>
         <header>
             <div class="logo">
                 <a href="/">
-                    <img
-                        src="/images/logo.png"
-                        alt="Лого"
-                        width="75"
-                        height="75"
-                    />
+                    <img src="/images/logo.png" alt="Лого" width="75" />
                 </a>
             </div>
             <nav>
@@ -119,6 +139,7 @@ const { title = "Коллекция гоблинов" } = Astro.props;
         <main>
             <slot />
         </main>
+        <button id="scrollToTop" class="scroll-to-top"></button>
         <footer id="contacts">
             <p>
                 По любым вопросам, предложениям, пожеланиям, ошибкам, переводу,
@@ -173,19 +194,11 @@ const { title = "Коллекция гоблинов" } = Astro.props;
         margin: 0 auto;
     }
 
-    /* a {
-    font-weight: bold;
-    padding: 16px;
-    color: rgb(11, 13, 173);
-    text-decoration: none;
-} */
-
     body {
         line-height: 1;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* a:hover, */
     a:focus {
         color: rgb(196, 14, 44);
     }
@@ -311,5 +324,72 @@ const { title = "Коллекция гоблинов" } = Astro.props;
 
     .spacer {
         height: 30px;
+    }
+
+    .scroll-to-top {
+        position: fixed;
+        bottom: 80px;
+        right: calc(
+            50% - 400px + 15px
+        ); /* Центровка для области шириной 800px */
+        background-color: rgba(
+            117,
+            112,
+            112,
+            0.3
+        ); /* Почти прозрачная серая кнопка */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: none; /* Изначально скрыта */
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition:
+            transform 0.3s ease,
+            background-color 0.3s ease;
+    }
+
+    .scroll-to-top {
+        position: fixed;
+        bottom: 70px;
+        right: calc(
+            50% - 400px + 15px
+        ); /* Центровка для области шириной 800px */
+        background-color: rgba(
+            117,
+            112,
+            112,
+            0.4
+        ); /* Почти прозрачная серая кнопка */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: none; /* Изначально скрыта */
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition:
+            transform 0.3s ease,
+            background-color 0.3s ease;
+    }
+
+    .scroll-to-top::before {
+        content: "⇧"; /* Символ стрелки вверх */
+        color: rgb(0, 0, 0); /* Цвет символа */
+        font-size: 24px; /* Размер стрелки */
+        font-weight: bold; /* Более жирный стиль */
+    }
+
+    .scroll-to-top:hover {
+        background-color: rgba(
+            117,
+            112,
+            112,
+            0.8
+        ); /* Более насыщенный цвет кнопки при наведении */
+        transform: scale(1.2); /* Легкое увеличение */
     }
 </style>
