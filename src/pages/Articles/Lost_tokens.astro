@@ -5,42 +5,45 @@ import Othertext from "../../layouts/Othertext.astro";
 import Card from "../../layouts/Card.astro";
 import Picture from "../../layouts/Picture.astro";
 ---
+
 <Layout title="Потерянные токены">
-    <Pagetitle pagetitle="Потерянные токены"/>
-	<Othertext text="Осознано или нет, но токены напечатаны не для всех карт, которые их создают, и гоблины не стали исключением. Без своих собственных токенов гоблинов к настоящему времени остались две карты."/>
-    <Card
-    img="/images/photos/articles/Goblin_Scouts.jpg"
-    enname="Goblin Scouts"
-    runame="Гоблины-разведчики"
-    prints="Mirage (1996)"
-    illustrated="Geofrey Darrow"
-    link="https://scryfall.com/search?q=a%3A%E2%80%9CGeofrey+Darrow%E2%80%9D&dir=asc&unique=art"
-    flavor="«Жалкий — как будто я не знал, что гоблин раскрашен в карлика!» \n — Пашад ибн Асим, торговец из Сук'Аты"
-    thanks=""
-    other="Красный токен Гоблина 1/1 со способностью Зания гор до сих пор не напечатан."
+    <Pagetitle pagetitle="Потерянные токены" />
+    <Othertext
+        text="Осознано или нет, но токены напечатаны не для всех карт, которые их создают, и гоблины не стали исключением. Без своих собственных токенов гоблинов к настоящему времени остались две карты."
     />
     <Card
-    img="/images/photos/articles/skirk-ridge-exhumer-fut.jpg"
-    enname="Skirk Ridge Exhumer"
-    runame="Эксгуматор Скиркского Хребта"
-    prints="Future Sight (2007)"
-    illustrated="Michael Phillippi"
-    link="https://scryfall.com/search?q=a%3A%E2%80%9CMichael+Phillippi%E2%80%9D&dir=asc&unique=art"
-    flavor=""
-    thanks=""
-    other="Интересно то, что карта Festering Goblin (Разлагающийся Гоблин) с такими характеристиками и способностями действительно существет, поэтому непосредственно токен мы врят ли когда-то увидим."
+        img="/images/photos/articles/Goblin_Scouts.jpg"
+        enname="Goblin Scouts"
+        runame="Гоблины-разведчики"
+        prints="Mirage (1996)"
+        illustrated="Geofrey Darrow"
+        link="https://scryfall.com/search?q=a%3A%E2%80%9CGeofrey+Darrow%E2%80%9D&dir=asc&unique=art"
+        flavor="«Жалкий — как будто я не знал, что гоблин раскрашен в карлика!» \n — Пашад ибн Асим, торговец из Сук'Аты"
+        thanks=""
+        other="Красный токен Гоблина 1/1 со способностью «зания гор» до сих пор не напечатан."
+    />
+    <Card
+        img="/images/photos/articles/skirk-ridge-exhumer-fut.jpg"
+        enname="Skirk Ridge Exhumer"
+        runame="Эксгуматор Скиркского Хребта"
+        prints="Future Sight (2007)"
+        illustrated="Michael Phillippi"
+        link="https://scryfall.com/search?q=a%3A%E2%80%9CMichael+Phillippi%E2%80%9D&dir=asc&unique=art"
+        flavor=""
+        thanks=""
+        other="Интересно, что карта Festering Goblin (Разлагающийся Гоблин) с такими характеристиками и способностями действительно существет, поэтому непосредственно токен мы врят ли когда-то увидим."
     >
-    <div class="custom-picture-container">
-        <Picture
-            picture="/images/scryfall/creatures/festering-goblin-ons.jpg"
-        />
-    </div>
-    <style>
-        .custom-picture-container {
-            margin: 0 auto;
-            width: 200px;
-            /* height: 400px; */
-        }
-    </style>
+        <div class="custom-picture-container">
+            <Picture
+                picture="/images/scryfall/creatures/festering-goblin-ons.jpg"
+            />
+        </div>
+        <style>
+            .custom-picture-container {
+                margin: 0 auto;
+                width: 200px;
+                /* height: 400px; */
+            }
+        </style>
     </Card>
 </Layout>

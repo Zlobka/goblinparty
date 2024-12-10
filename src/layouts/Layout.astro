@@ -328,35 +328,8 @@ const { title = "Коллекция гоблинов" } = Astro.props;
 
     .scroll-to-top {
         position: fixed;
-        bottom: 80px;
-        right: calc(
-            50% - 400px + 15px
-        ); /* Центровка для области шириной 800px */
-        background-color: rgba(
-            117,
-            112,
-            112,
-            0.3
-        ); /* Почти прозрачная серая кнопка */
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: none; /* Изначально скрыта */
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition:
-            transform 0.3s ease,
-            background-color 0.3s ease;
-    }
-
-    .scroll-to-top {
-        position: fixed;
         bottom: 70px;
-        right: calc(
-            50% - 400px + 15px
-        ); /* Центровка для области шириной 800px */
+        right: 15px; /* По умолчанию кнопка в правом нижнем углу */
         background-color: rgba(
             117,
             112,
@@ -376,13 +349,6 @@ const { title = "Коллекция гоблинов" } = Astro.props;
             background-color 0.3s ease;
     }
 
-    .scroll-to-top::before {
-        content: "⇧"; /* Символ стрелки вверх */
-        color: rgb(0, 0, 0); /* Цвет символа */
-        font-size: 24px; /* Размер стрелки */
-        font-weight: bold; /* Более жирный стиль */
-    }
-
     .scroll-to-top:hover {
         background-color: rgba(
             117,
@@ -391,5 +357,21 @@ const { title = "Коллекция гоблинов" } = Astro.props;
             0.8
         ); /* Более насыщенный цвет кнопки при наведении */
         transform: scale(1.2); /* Легкое увеличение */
+    }
+
+    .scroll-to-top::before {
+        content: "⇧"; /* Символ стрелки вверх */
+        color: rgb(0, 0, 0); /* Цвет символа */
+        font-size: 24px; /* Размер стрелки */
+        font-weight: bold; /* Более жирный стиль */
+    }
+
+    /* Ограничение для широких экранов */
+    @media (min-width: 800px) {
+        .scroll-to-top {
+            right: calc(
+                50% - 400px + 15px
+            ); /* Центровка для области шириной 800px */
+        }
     }
 </style>

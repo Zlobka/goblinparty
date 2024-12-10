@@ -6,11 +6,9 @@ import { creatures } from "../../../data/creatures"; // Импортируем �
 // Параметры для пагинации
 const itemsPerPage = 30;
 const totalPages = Math.ceil(creatures.length / itemsPerPage);
-
-// Передаем данные существ и параметры пагинации как пропсы в клиентский скрипт
 ---
 
-<Layout title="Существа">
+<Layout title="Goblins">
 	<div class="search-container">
 		<div class="search-header">
 			<Pagetitle pagetitle="Существа" />
@@ -37,12 +35,20 @@ const totalPages = Math.ceil(creatures.length / itemsPerPage);
 
 	<!-- Пагинация -->
 	<div class="pagination">
-		<button class="prev-page" id="prevPageButton" disabled="true">
-			Предыдущая
+		<button
+			class="prev-page slider-btn"
+			id="prevPageButton"
+			disabled="true"
+		>
+			&#8656; <!-- Стрелка влево -->
 		</button>
 		<span id="pageInfo">Страница 1 из {totalPages}</span>
-		<button class="next-page" id="nextPageButton" disabled="true">
-			Следующая
+		<button
+			class="next-page slider-btn"
+			id="nextPageButton"
+			disabled="true"
+		>
+			&#8658; <!-- Стрелка вправо -->
 		</button>
 	</div>
 </Layout>
@@ -76,6 +82,7 @@ const totalPages = Math.ceil(creatures.length / itemsPerPage);
 		);
 
 		// Функция для рендера существ
+		// Функция для рендера существ
 		function renderCreatures() {
 			imageRow.innerHTML = ""; // Очищаем текущие элементы
 			const startIndex = (currentPage - 1) * itemsPerPage;
@@ -91,13 +98,13 @@ const totalPages = Math.ceil(creatures.length / itemsPerPage);
 					const creatureElement = document.createElement("div");
 					creatureElement.classList.add("image-item");
 					creatureElement.innerHTML = `
-            <a href="${creature.link}">
-              <p>${creature.enname}</p>
-            </a>
-            <a href="${creature.link}">
-              <img src="${creature.img}" alt="${creature.enname}" width="250" height="350">
-            </a>
-          `;
+                <a href="${creature.link}" target="_blank">
+                    <p>${creature.enname}</p>
+                </a>
+                <a href="${creature.link}" target="_blank">
+                    <img src="${creature.img}" alt="${creature.enname}" width="250" height="350">
+                </a>
+            `;
 					imageRow.appendChild(creatureElement);
 				});
 			} else {
@@ -157,13 +164,70 @@ const totalPages = Math.ceil(creatures.length / itemsPerPage);
 	.pagination button {
 		padding: 10px 20px;
 		background-color: #ccc;
-		border: none;
+		border: 2px solid black;
 		cursor: pointer;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 
 	.pagination button:disabled {
 		background-color: #ddd;
 		cursor: not-allowed;
+	}
+
+	.slider-btn {
+		position: fixed;
+		top: 60%; /* Центр по высоте */
+		transform: translateY(-50%); /* Выравнивание по центру */
+		width: 40px;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #ccc;
+		border: 2px solid black;
+		border-radius: 50%;
+		font-size: 30px; /* Увеличенный размер стрелки */
+		font-weight: bold;
+		cursor: pointer;
+		z-index: 1000; /* Поверх контента */
+		opacity: 0.4; /* Легкая прозрачность */
+		transition:
+			background-color 0.3s,
+			transform 0.3s,
+			opacity 0.3s; /* Плавное изменение */
+	}
+
+	.slider-btn:hover {
+		background-color: rgba(
+			117,
+			112,
+			112,
+			0.8
+		); /* Изменение цвета при наведении */
+		opacity: 1; /* Убираем прозрачность при наведении */
+	}
+
+	.slider-btn:disabled {
+		background-color: #ddd;
+		cursor: not-allowed;
+		opacity: 0.5; /* Прозрачность для неактивных кнопок */
+	}
+
+	.prev-page {
+		left: 10px; /* Отступ от левого края */
+	}
+
+	.next-page {
+		right: 10px; /* Отступ от правого края */
+	}
+
+	@media (min-width: 800px) {
+		.prev-page {
+			left: calc(50% - 400px); /* Ограничиваем отступ от центра */
+		}
+
+		.next-page {
+			right: calc(50% - 400px); /* Ограничиваем отступ от центра */
+		}
 	}
 </style>

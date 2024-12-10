@@ -8,7 +8,7 @@ const itemsPerPage = 30;
 const totalPages = Math.ceil(tokens.length / itemsPerPage);
 ---
 
-<Layout title="Токены">
+<Layout title="Tokens">
     <div class="search-container">
         <div class="search-header">
             <Pagetitle pagetitle="Токены" />
@@ -35,12 +35,20 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
 
     <!-- Пагинация -->
     <div class="pagination">
-        <button class="prev-page" id="prevPageButton" disabled="true">
-            Предыдущая
+        <button
+            class="prev-page slider-btn"
+            id="prevPageButton"
+            disabled="true"
+        >
+            &lt;
         </button>
         <span id="pageInfo">Страница 1 из {totalPages}</span>
-        <button class="next-page" id="nextPageButton" disabled="true">
-            Следующая
+        <button
+            class="next-page slider-btn"
+            id="nextPageButton"
+            disabled="true"
+        >
+            &gt;
         </button>
     </div>
 </Layout>
@@ -152,13 +160,63 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
     .pagination button {
         padding: 10px 20px;
         background-color: #ccc;
-        border: none;
+        border: 2px solid black;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 10px;
     }
 
     .pagination button:disabled {
         background-color: #ddd;
         cursor: not-allowed;
+    }
+
+    .pagination button:hover {
+        background-color: rgba(
+            117,
+            112,
+            112,
+            0.8
+        ); /* Более насыщенный цвет кнопки при наведении */
+        transform: scale(1.1); /* Легкое увеличение */
+    }
+    .slider-btn {
+        position: fixed;
+        top: 50%; /* Центр по высоте */
+        transform: translateY(-50%); /* Выравнивание по центру */
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        border: 2px solid black;
+        border-radius: 50%;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1000; /* Поверх контента */
+    }
+
+    .slider-btn:hover {
+        background-color: rgba(117, 112, 112, 0.8);
+        transform: translateY(-50%) scale(1.2); /* Увеличение при наведении */
+    }
+
+    .slider-btn:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+    }
+
+    .prev-page {
+        left: 10px; /* Отступ от левого края */
+    }
+
+    .next-page {
+        right: 10px; /* Отступ от правого края */
+    }
+
+    /* Скрываем нижнюю часть пагинации */
+    .pagination span {
+        display: none;
     }
 </style>
