@@ -1,11 +1,9 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import Pagetitle from "../../../layouts/Pagetitle.astro";
-import { tokens } from "../../../data/tokens"; // Импортируем массив токенов
+import { tokens } from "../../../data/tokens";
 
-// Параметры для пагинации
 const itemsPerPage = 30;
-const totalPages = Math.ceil(tokens.length / itemsPerPage);
 ---
 
 <Layout title="Tokens">
@@ -26,11 +24,8 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
         id="tokensGallery"
         data-tokens={JSON.stringify(tokens)}
         data-items-per-page={itemsPerPage}
-        data-total-pages={totalPages}
     >
-        <div class="image-row" id="imageRow">
-            <!-- Элементы существ будут добавляться динамически -->
-        </div>
+        <div class="image-row" id="imageRow"></div>
     </div>
 
     <!-- Пагинация -->
@@ -40,16 +35,23 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
             id="prevPageButton"
             disabled="true"
         >
-            &lt;
+            &#8656;
         </button>
-        <span id="pageInfo">Страница 1 из {totalPages}</span>
         <button
             class="next-page slider-btn"
             id="nextPageButton"
             disabled="true"
         >
-            &gt;
+            &#8658;
         </button>
+    </div>
+
+    <!-- Переход на конкретную страницу -->
+    <div class="page-selector">
+        <label for="pageInput">Перейти на страницу:</label>
+        <input type="number" id="pageInput" min="1" value="1" />
+        <span id="totalPagesLabel"></span>
+        <button id="goToPageButton">Перейти</button>
     </div>
 </Layout>
 
@@ -59,14 +61,16 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
         const imageRow = document.getElementById("imageRow");
         const prevPageButton = document.getElementById("prevPageButton");
         const nextPageButton = document.getElementById("nextPageButton");
-        const pageInfo = document.getElementById("pageInfo");
+        const pageInput = document.getElementById("pageInput");
+        const goToPageButton = document.getElementById("goToPageButton");
+        const totalPagesLabel = document.getElementById("totalPagesLabel");
 
-        // Данные передаются через атрибут data-tokens
         const tokens = JSON.parse(
             document
                 .getElementById("tokensGallery")
                 .getAttribute("data-tokens"),
         );
+
         let filteredTokens = tokens;
         let currentPage = 1;
 
@@ -75,60 +79,61 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
                 .getElementById("tokensGallery")
                 .getAttribute("data-items-per-page"),
         );
-        const totalPages = parseInt(
-            document
-                .getElementById("tokensGallery")
-                .getAttribute("data-total-pages"),
-        );
 
         // Функция для рендера токенов
         function renderTokens() {
-            imageRow.innerHTML = ""; // Очищаем текущие элементы
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
-            const tokensToDisplay = filteredTokens.slice(startIndex, endIndex);
 
-            // Добавляем токены на страницу
+            const totalPages = Math.ceil(filteredTokens.length / itemsPerPage);
+            if (currentPage > totalPages) currentPage = totalPages;
+
+            const tokensToDisplay = filteredTokens.slice(startIndex, endIndex);
+            imageRow.innerHTML = "";
+
             if (tokensToDisplay.length > 0) {
                 tokensToDisplay.forEach((token) => {
                     const tokenElement = document.createElement("div");
                     tokenElement.classList.add("image-item");
                     tokenElement.innerHTML = `
-            <a href="${token.link}">
-              <p>${token.enname}</p>
-            </a>
-            <a href="${token.link}">
-              <img src="${token.img}" alt="${token.enname}" width="250" height="350">
-            </a>
-          `;
+                        <a href="${token.link}" target="_blank">
+                            <p>${token.enname}</p>
+                        </a>
+                        <a href="${token.link}" target="_blank">
+                            <img src="${token.img}" alt="${token.enname}" width="250" height="350">
+                        </a>
+                    `;
                     imageRow.appendChild(tokenElement);
                 });
             } else {
                 imageRow.innerHTML = "<p>Токены не найдены.</p>";
             }
 
-            // Обновляем информацию о пагинации
-            pageInfo.innerHTML = `Страница ${currentPage} из ${totalPages}`;
-            prevPageButton.disabled = currentPage === 1;
-            nextPageButton.disabled = currentPage === totalPages;
+            // Обновляем состояние кнопок пагинации
+            prevPageButton.disabled = currentPage === 1 || totalPages === 0;
+            nextPageButton.disabled =
+                currentPage === totalPages || totalPages === 0;
 
-            // Прокручиваем страницу наверх
+            // Обновляем отображение номера текущей страницы
+            totalPagesLabel.textContent = `из ${totalPages}`;
+            pageInput.value = currentPage;
+
+            // Прокрутка наверх
             window.scrollTo(0, 0);
         }
 
-        // Функция фильтрации
-        searchInput.addEventListener("input", function () {
+        // Фильтрация токенов
+        searchInput.addEventListener("input", () => {
             const query = searchInput.value.toLowerCase();
             filteredTokens = tokens.filter((token) =>
                 token.enname.toLowerCase().includes(query),
             );
 
-            // Обновляем текущую страницу после фильтрации
             currentPage = 1;
             renderTokens();
         });
 
-        // Обработчики пагинации
+        // Кнопки пагинации
         prevPageButton.addEventListener("click", () => {
             if (currentPage > 1) {
                 currentPage--;
@@ -137,13 +142,27 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
         });
 
         nextPageButton.addEventListener("click", () => {
+            const totalPages = Math.ceil(filteredTokens.length / itemsPerPage);
             if (currentPage < totalPages) {
                 currentPage++;
                 renderTokens();
             }
         });
 
-        // Инициализация отображения
+        // Переход к определенной странице
+        goToPageButton.addEventListener("click", () => {
+            const requestedPage = parseInt(pageInput.value, 10);
+            const totalPages = Math.ceil(filteredTokens.length / itemsPerPage);
+
+            if (requestedPage >= 1 && requestedPage <= totalPages) {
+                currentPage = requestedPage;
+                renderTokens();
+            } else {
+                alert(`Введите номер страницы от 1 до ${totalPages}`);
+            }
+        });
+
+        // Инициализация
         renderTokens();
     });
 </script>
@@ -170,41 +189,43 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
         cursor: not-allowed;
     }
 
-    .pagination button:hover {
-        background-color: rgba(
-            117,
-            112,
-            112,
-            0.8
-        ); /* Более насыщенный цвет кнопки при наведении */
-        transform: scale(1.1); /* Легкое увеличение */
-    }
     .slider-btn {
         position: fixed;
-        top: 50%; /* Центр по высоте */
+        top: 60%; /* Центр по высоте */
         transform: translateY(-50%); /* Выравнивание по центру */
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #ccc;
         border: 2px solid black;
         border-radius: 50%;
-        font-size: 24px;
+        font-size: 30px;
         font-weight: bold;
         cursor: pointer;
         z-index: 1000; /* Поверх контента */
+        opacity: 0.4; /* Легкая прозрачность */
+        transition:
+            background-color 0.3s,
+            transform 0.3s,
+            opacity 0.3s; /* Плавное изменение */
     }
 
     .slider-btn:hover {
-        background-color: rgba(117, 112, 112, 0.8);
-        transform: translateY(-50%) scale(1.2); /* Увеличение при наведении */
+        background-color: rgba(
+            117,
+            112,
+            112,
+            0.8
+        ); /* Изменение цвета при наведении */
+        opacity: 1; /* Убираем прозрачность при наведении */
     }
 
     .slider-btn:disabled {
         background-color: #ddd;
         cursor: not-allowed;
+        opacity: 0.5; /* Прозрачность для неактивных кнопок */
     }
 
     .prev-page {
@@ -215,8 +236,35 @@ const totalPages = Math.ceil(tokens.length / itemsPerPage);
         right: 10px; /* Отступ от правого края */
     }
 
-    /* Скрываем нижнюю часть пагинации */
-    .pagination span {
-        display: none;
+    @media (min-width: 800px) {
+        .prev-page {
+            left: calc(50% - 400px); /* Ограничиваем отступ от центра */
+        }
+
+        .next-page {
+            right: calc(50% - 400px); /* Ограничиваем отступ от центра */
+        }
+    }
+
+    .page-selector {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .page-selector input {
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .page-selector button {
+        padding: 5px 10px;
+        background-color: #ccc;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 5px;
     }
 </style>
