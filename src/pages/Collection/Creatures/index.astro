@@ -18,6 +18,13 @@ const itemsPerPage = 30;
 			/>
 		</div>
 	</div>
+	<!-- Переход на конкретную страницу -->
+	<div class="page-selector">
+		<label for="pageInput">Перейти на страницу:</label>
+		<input type="number" id="pageInput" min="1" value="1" />
+		<span id="totalPagesLabel"></span>
+		<button id="goToPageButton">Перейти</button>
+	</div>
 
 	<div
 		class="image-gallery"
@@ -44,14 +51,6 @@ const itemsPerPage = 30;
 		>
 			&#8658; <!-- Стрелка вправо -->
 		</button>
-	</div>
-
-	<!-- Переход на конкретную страницу -->
-	<div class="page-selector">
-		<label for="pageInput">Перейти на страницу:</label>
-		<input type="number" id="pageInput" min="1" value="1" />
-		<span id="totalPagesLabel"></span>
-		<button id="goToPageButton">Перейти</button>
 	</div>
 </Layout>
 
@@ -164,6 +163,21 @@ const itemsPerPage = 30;
 			}
 		});
 
+		pageInput.addEventListener("keydown", (event) => {
+			if (event.key === "Enter") {
+				const requestedPage = parseInt(pageInput.value, 10);
+				const totalPages = Math.ceil(
+					filteredCreatures.length / itemsPerPage,
+				);
+				if (requestedPage >= 1 && requestedPage <= totalPages) {
+					currentPage = requestedPage;
+					renderCreatures();
+				} else {
+					alert(`Введите номер страницы от 1 до ${totalPages}`);
+				}
+			}
+		});
+
 		goToPageButton.addEventListener("click", () => {
 			const requestedPage = parseInt(pageInput.value, 10);
 			const totalPages = Math.ceil(
@@ -258,6 +272,13 @@ const itemsPerPage = 30;
 
 		.next-page {
 			right: calc(50% - 400px); /* Ограничиваем отступ от центра */
+		}
+
+		.search-input {
+			width: 100%; /* Растягиваем на всю ширину */
+			max-width: 300px; /* Ограничиваем максимальную ширину */
+			margin: 0 auto; /* Центрируем элемент по горизонтали */
+			display: block; /* Убираем возможное поведение inline-block */
 		}
 	}
 

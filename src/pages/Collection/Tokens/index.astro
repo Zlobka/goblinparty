@@ -18,6 +18,13 @@ const itemsPerPage = 30;
             />
         </div>
     </div>
+    <!-- Переход на конкретную страницу -->
+    <div class="page-selector">
+        <label for="pageInput">Перейти на страницу:</label>
+        <input type="number" id="pageInput" min="1" value="1" />
+        <span id="totalPagesLabel"></span>
+        <button id="goToPageButton">Перейти</button>
+    </div>
 
     <div
         class="image-gallery"
@@ -44,14 +51,6 @@ const itemsPerPage = 30;
         >
             &#8658;
         </button>
-    </div>
-
-    <!-- Переход на конкретную страницу -->
-    <div class="page-selector">
-        <label for="pageInput">Перейти на страницу:</label>
-        <input type="number" id="pageInput" min="1" value="1" />
-        <span id="totalPagesLabel"></span>
-        <button id="goToPageButton">Перейти</button>
     </div>
 </Layout>
 
@@ -146,6 +145,21 @@ const itemsPerPage = 30;
             if (currentPage < totalPages) {
                 currentPage++;
                 renderTokens();
+            }
+        });
+
+        pageInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                const requestedPage = parseInt(pageInput.value, 10);
+                const totalPages = Math.ceil(
+                    filteredTokens.length / itemsPerPage,
+                );
+                if (requestedPage >= 1 && requestedPage <= totalPages) {
+                    currentPage = requestedPage;
+                    renderTokens();
+                } else {
+                    alert(`Введите номер страницы от 1 до ${totalPages}`);
+                }
             }
         });
 
