@@ -205,10 +205,10 @@ const itemsPerPage = 30;
 
     .slider-btn {
         position: fixed;
-        top: 60%; /* Центр по высоте */
-        transform: translateY(-50%); /* Выравнивание по центру */
+        top: 60%;
+        transform: translateY(-50%); /* Центрирование */
         width: 40px;
-        height: 50px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -223,31 +223,26 @@ const itemsPerPage = 30;
         transition:
             background-color 0.3s,
             transform 0.3s,
-            opacity 0.3s; /* Плавное изменение */
+            opacity 0.3s;
     }
 
     .slider-btn:hover {
-        background-color: rgba(
-            117,
-            112,
-            112,
-            0.8
-        ); /* Изменение цвета при наведении */
-        opacity: 1; /* Убираем прозрачность при наведении */
+        background-color: rgba(117, 112, 112, 0.8);
+        opacity: 1;
     }
 
     .slider-btn:disabled {
         background-color: #ddd;
         cursor: not-allowed;
-        opacity: 0.5; /* Прозрачность для неактивных кнопок */
+        opacity: 0.5;
     }
 
     .prev-page {
-        left: 10px; /* Отступ от левого края */
+        left: max(10px, calc((100% - 800px) / 2));
     }
 
     .next-page {
-        right: 10px; /* Отступ от правого края */
+        right: max(10px, calc((100% - 800px) / 2));
     }
 
     .search-input {
@@ -255,16 +250,6 @@ const itemsPerPage = 30;
         max-width: 200px; /* Ограничиваем максимальную ширину */
         margin: 0 auto; /* Центрируем элемент по горизонтали */
         display: block; /* Убираем возможное поведение inline-block */
-    }
-
-    @media (min-width: 800px) {
-        .prev-page {
-            left: calc(50% - 400px); /* Ограничиваем отступ от центра */
-        }
-
-        .next-page {
-            right: calc(50% - 400px); /* Ограничиваем отступ от центра */
-        }
     }
 
     .page-selector {
