@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Card from "../../../layouts/Card.astro";
+---
+
+<Layout title="Goblin">
+	<Card
+		img="/images/photos/tokens/goblin-wwoe-4.jpg"
+		enname="Goblin"
+		runame="Гоблин"
+		prints="WOE Japanese Promo Tokens (2023)"
+		illustrated="Jim Nelson"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CJim+Nelson%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other="После релиза Wilds of Eldraine в японских магазинах FamilyMart и Lawson проходила рекламная компания, по которой можно было получить один из 6 токенов, среди которых был и ранее издававшийся Гоблин, но уже в новой рамке и фойловом исполнении."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-l12.jpg"
+			link="/Collection/Tokens/goblin-l12"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-wwoe.jpg"
+			link="/Collection/Tokens/goblin-wwoe"
+		/>
+	</Scroll>
+</Layout>

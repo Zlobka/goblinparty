@@ -1,5 +1,7 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
 import Card from "../../../layouts/Card.astro";
 ---
 
@@ -15,5 +17,14 @@ import Card from "../../../layouts/Card.astro";
 		thanks=""
 		other="Благодаря переизданию в Ravnica Remastered карты Rakdos Guildmage (Маг гильдии Ракдосов) у нас наконец-то появился правильный токен гоблина со всеми необходимыми способностями (в отличии изданного в RNA Guild Kit)."
 	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tgk2.jpg"
+			link="/Collection/Tokens/goblin-tgk2"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-trvr.jpg"
+			link="/Collection/Tokens/goblin-trvr"
+		/>
+	</Scroll>
 </Layout>
-

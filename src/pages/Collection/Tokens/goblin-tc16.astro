@@ -1,5 +1,7 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
 import Card from "../../../layouts/Card.astro";
 ---
 
@@ -8,12 +10,21 @@ import Card from "../../../layouts/Card.astro";
 		img="/images/photos/tokens/goblin-tc16.jpg"
 		enname="Goblin"
 		runame="Гоблин"
-		prints="Commander (2016), Battle for Baldur's Gate (2022)"
+		prints="Commander (2016)"
 		illustrated="Wayne Reynolds"
 		link="https://scryfall.com/search?q=a%3A%E2%80%9CWayne+Reynolds%E2%80%9D&order=released&dir=asc&unique=art"
 		flavor=""
 		thanks=""
 		other=""
 	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tc16.jpg"
+			link="/Collection/Tokens/goblin-tc16"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tclb.jpg"
+			link="/Collection/Tokens/goblin-tclb"
+		/>
+	</Scroll>
 </Layout>
-

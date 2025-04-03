@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Card from "../../../layouts/Card.astro";
+---
+
+<Layout title="Goblin">
+	<Card
+		img="/images/scryfall/tokens/goblin-tonc.jpg"
+		enname="Goblin"
+		runame="Гоблин"
+		prints="Phyrexia: All Will Be One Commander (2023)"
+		illustrated="Goran Josic"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CGoran+Josic%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tsom.jpg"
+			link="/Collection/Tokens/goblin-tsom"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tonc.jpg"
+			link="/Collection/Tokens/goblin-tonc"
+		/>
+	</Scroll>
+</Layout>

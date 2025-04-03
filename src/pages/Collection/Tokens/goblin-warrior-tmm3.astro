@@ -1,0 +1,34 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Card from "../../../layouts/Card.astro";
+---
+
+<Layout title="Goblin Warrior">
+	<Card
+		img="/images/scryfall/tokens/goblin-warrior-tmm3.jpg"
+		enname="Goblin Warrior"
+		runame="Гоблин Воин"
+		prints="Modern Masters (2017)"
+		illustrated="Dave Allsop"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDave+Allsop%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-warrior-tshm.jpg"
+			link="/Collection/Tokens/goblin-warrior-tshm"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-warrior-tmm3.jpg"
+			link="/Collection/Tokens/goblin-warrior-tmm3"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-warrior-tc20.jpg"
+			link="/Collection/Tokens/goblin-warrior-tc20"
+		/>
+	</Scroll>
+</Layout>

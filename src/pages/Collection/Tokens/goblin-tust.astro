@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Card from "../../../layouts/Card.astro";
+---
+
+<Layout title="Goblin">
+	<Card
+		img="/images/photos/tokens/goblin-tust.jpg"
+		enname="Goblin"
+		runame="Гоблин"
+		prints="Unstable (2017)"
+		illustrated="Dave Allsop"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CDave+Allsop%E2%80%9D&dir=asc&unique=art"
+		flavor=""
+		thanks="Большое спасибо Павлу Руденко за данный токен!"
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tust.jpg"
+			link="/Collection/Tokens/goblin-tust"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tund.jpg"
+			link="/Collection/Tokens/goblin-tund"
+		/>
+	</Scroll>
+</Layout>

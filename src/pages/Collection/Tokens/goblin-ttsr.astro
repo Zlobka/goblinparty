@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Card from "../../../layouts/Card.astro";
+---
+
+<Layout title="Goblin">
+	<Card
+		img="/images/photos/tokens/goblin-ttsr.jpg"
+		enname="Goblin"
+		runame="Гоблин"
+		prints="Time Spiral Remastered (2021)"
+		illustrated="Thomas M. Baxa"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CThomas+M.+Baxa%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-ttsr.jpg"
+			link="/Collection/Tokens/goblin-ttsr"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tdmr.jpg"
+			link="/Collection/Tokens/goblin-tdmr"
+		/>
+	</Scroll>
+</Layout>

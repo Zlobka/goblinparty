@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Card from "../../../layouts/Card.astro";
+---
+
+<Layout title="Phyrexian Goblin">
+	<Card
+		img="/images/scryfall/tokens/phyrexian-goblin-tfdn.jpg"
+		enname="Phyrexian Goblin"
+		runame="Фирексийский Гоблин"
+		prints="Foundation (2024)"
+		illustrated="Jokubas Uogintas"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CJokubas+Uogintas%E2%80%9D&order=released&dir=asc&unique=art"
+		flavor=""
+		thanks=""
+		other=""
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/phyrexian-goblin-tone.jpg"
+			link="/Collection/Tokens/phyrexian-goblin-tone"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/phyrexian-goblin-tfdn.jpg"
+			link="/Collection/Tokens/phyrexian-goblin-tfdn"
+		/>
+	</Scroll>
+</Layout>

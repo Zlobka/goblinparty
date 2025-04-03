@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Scroll from "../../../layouts/Scroll.astro";
+import Scrollcard from "../../../layouts/Scrollcard.astro";
+import Card from "../../../layouts/Card.astro";
+---
+
+<Layout title="Goblin">
+	<Card
+		img="/images/photos/tokens/goblin-tgrn.jpg"
+		enname="Goblin"
+		runame="Гоблин"
+		prints="Guilds of Ravnica (2018), GRN Guild Kit (2018), Ravnica Remastered (2024)"
+		illustrated="Mark Zug"
+		link="https://scryfall.com/search?q=a%3A%E2%80%9CMark+Zug%E2%80%9D&dir=asc&unique=art"
+		flavor=""
+		thanks="Большое спасибо Владимиру Коршунову  за данный токен!"
+		other="В наборе GRN Guild Kit выпускались еще два абсолютно индентичных токена Гоблина, на обратной стороне которых напечатаны белый Солдат с Lifelink и красно-белый Солдат без способностей."
+	/>
+	<Scroll>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-tgrn.jpg"
+			link="/Collection/Tokens/goblin-tgrn"
+		/>
+		<Scrollcard
+			img="/images/scryfall/tokens/goblin-trvr-8.jpg"
+			link="/Collection/Tokens/goblin-trvr-8"
+		/>
+	</Scroll>
+</Layout>
