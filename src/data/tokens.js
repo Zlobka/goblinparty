@@ -78,4 +78,5 @@ export const tokens = [
     { enname: "Goblin", link: "/Collection/Tokens/goblin-tfdn", img: "/images/scryfall/tokens/goblin-tfdn.jpg" },
     { enname: "Phyrexian Goblin", link: "/Collection/Tokens/phyrexian_goblin-tfdn", img: "/images/scryfall/tokens/phyrexian-goblin-tfdn.jpg" },
     { enname: "Goblin", link: "/Collection/Tokens/goblin-tdft", img: "/images/scryfall/tokens/goblin-tdft.jpg" },
+    { enname: "Goblin", link: "/Collection/Tokens/goblin-ttdm", img: "/images/scryfall/tokens/goblin-ttdm.jpg" },
 ];

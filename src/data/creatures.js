@@ -186,5 +186,6 @@ export const creatures = [
     { enname: "Mudbutton Torchrunner", link: "/Collection/Creatures/mudbutton-torchrunner-lrw", img: "/images/scryfall/creatures/mudbutton-torchrunner-lrw.jpg" },
     { enname: "Stinkdrinker Daredevil", link: "/Collection/Creatures/stinkdrinker-daredevil-lrw", img: "/images/scryfall/creatures/stinkdrinker-daredevil-lrw.jpg" },
     { enname: "Tar Pitcher", link: "/Collection/Creatures/tar-pitcher-lrw", img: "/images/scryfall/creatures/tar-pitcher-lrw.jpg" },
-    { enname: "Wort, Boggart Auntie", link: "/Collection/Creatures/wort-boggart-auntie-lrw", img: "/images/scryfall/creatures/wort-boggart-auntie-lrw.jpg" }
+    { enname: "Wort, Boggart Auntie", link: "/Collection/Creatures/wort-boggart-auntie-lrw", img: "/images/scryfall/creatures/wort-boggart-auntie-lrw.jpg" },
+    { enname: "Auntie's Snitch", link: "/Collection/Creatures/auntie-s-snitch-mor", img: "/images/scryfall/creatures/auntie-s-snitch-mor.jpg" }
 ];

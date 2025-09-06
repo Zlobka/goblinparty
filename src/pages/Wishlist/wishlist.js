@@ -60,16 +60,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/c\/8\/c8fb34ae-157c-4f4b-bb47-2a9dc394a20c.jpg?1562879754"
     },
     {
-        "name": "Goblin Balloon Brigade",
-        "set_name": "Ninth Edition",
-        "set_code": "9ED",
-        "year": "2005",
-        "number": 189,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/0\/5\/059227f9-f6d7-45ab-8398-35e97b677a08.jpg?1562730811"
-    },
-    {
         "name": "Goblin Brigand",
         "set_name": "Ninth Edition",
         "set_code": "9ED",
@@ -80,16 +70,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/6\/862a481a-f236-4e99-b4b9-086e6cb8f4de.jpg?1562738002"
     },
     {
-        "name": "Goblin Chariot",
-        "set_name": "Ninth Edition",
-        "set_code": "9ED",
-        "year": "2005",
-        "number": 191,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/1\/3\/136a15cb-9591-4521-a142-af766dd7eeef.jpg?1562731634"
-    },
-    {
         "name": "Goblin King",
         "set_name": "Ninth Edition",
         "set_code": "9ED",
@@ -98,16 +78,6 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/4\/34c68f83-5471-40b5-a673-84032ce24ba2.jpg?1562733560"
-    },
-    {
-        "name": "Goblin Mountaineer",
-        "set_name": "Ninth Edition",
-        "set_code": "9ED",
-        "year": "2005",
-        "number": 193,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/8\/7\/8754592a-2f9b-477c-a049-d9a3eed271e5.jpg?1562738058"
     },
     {
         "name": "Mogg Sentry",
@@ -198,16 +168,6 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/4\/7\/47307d3f-14e8-42bd-acf4-1383e5790e6f.jpg?1562570742"
-    },
-    {
-        "name": "Bloodshot Trainee",
-        "set_name": "Future Sight",
-        "set_code": "FUT",
-        "year": "2007",
-        "number": 110,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/b\/9\/b930b146-d132-454f-b35d-4a247c14c054.jpg?1562932259"
     },
     {
         "name": "Steamflogger Boss",
@@ -328,16 +288,6 @@ const wishlist = [
         "lang": "RU",
         "foil": "Foil",
         "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/9\/39b1655b-ab0a-40d9-8d4d-55d13310ede1.jpg?1562344500"
-    },
-    {
-        "name": "Nath's Buffoon",
-        "set_name": "Lorwyn",
-        "set_code": "LRW",
-        "year": "2007",
-        "number": 129,
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/6\/6\/66f077d2-34ab-45fa-84db-eb408c5a9996.jpg?1562351220"
     },
     {
         "name": "Quill-Slinger Boggart",
@@ -670,16 +620,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/6\/7\/674bd59d-9d6d-434d-974f-3aa1cbd770b5.jpg?1561982958"
     },
     {
-        "name": "Siege-Gang Commander",
-        "set_name": "Magic 2010",
-        "set_code": "M10",
-        "year": "2009",
-        "number": "157",
-        "lang": "RU",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/f\/9f5128dd-54dd-42a8-b126-f821f87ad069.jpg?1561990223"
-    },
-    {
         "name": "Goblin Guide",
         "set_name": "Zendikar",
         "set_code": "ZEN",
@@ -964,16 +904,6 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/7\/9\/793c45e2-d0ce-4899-9f7f-5629bd6e01a1.jpg?1654570070"
     },
     {
-        "name": "Dockside Extortionist",
-        "set_name": "Double Masters 2022",
-        "set_code": "2X2",
-        "year": "2022",
-        "number": 107,
-        "lang": "EN",
-        "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/9\/e\/9e2e3efb-75cb-430f-b9f4-cb58f3aeb91b.jpg?1673147774"
-    },
-    {
         "name": "Sprouting Goblin",
         "set_name": "Dominaria United Art Series",
         "set_code": "ADMU",
@@ -1039,14 +969,14 @@ const wishlist = [
         "href": "https:\/\/cards.scryfall.io\/large\/front\/5\/3\/53be77ed-45e2-4344-95cc-f6715d79d8ff.jpg?1730165634"
     },
     {
-        "name": "Breeches, Eager Pillager",
-        "set_name": "Secret Lair Drop",
-        "set_code": "SLD",
-        "year": "2024",
-        "number": "1551",
+        "name": "Fable of the Mirror-Breaker",
+        "set_name": "Store Championships",
+        "set_code": "SCH",
+        "year": "2025",
+        "number": "44",
         "lang": "EN",
         "foil": "Foil",
-        "href": "https:\/\/cards.scryfall.io\/large\/front\/4\/8\/480d639d-871d-4da3-9ae1-41bd5cef81db.jpg?1738928039"
+        "href": "https:\/\/cards.scryfall.io\/large\/front\/3\/d\/3d4b9d4e-ab16-4d81-ac15-e84b351ef2dd.jpg?1753806590"
     }
 ];
 
